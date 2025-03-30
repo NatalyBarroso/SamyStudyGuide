@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-asset: var(--asset-color);
+  --color-wrong-answer: var(--wrong-answer-color);
+  --color-correct-answer: var(--correct-answer-color);
+  --color-correct-answer-text: var(--correct-answer-text);
+  --font-courier-prime: var(--font-courier-prime);
+  --font-cutive-mono: var(--font-cutive-mono);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #F6F0F0;
+    --foreground: #0a0a0a; /* RGB (246,240,240,1) */
+    --primary-color: #4C585B; /* RGB (76,88,91,1) */
+    --secondary-color: #7E99A3; /* RGB (126,153,163,1) */
+    --asset-color: #D9D9D9; /* RGB (217,217,217,1) */
+    --wrong-answer-color: #D8B6B6; /* RGB (216,182,182,1) */
+    --correct-answer-color: #B3D9B3; /* RGB (179,217,179,1) */
+    --correct-answer-text: #008000; /* RGB (0,128,0,1) */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
