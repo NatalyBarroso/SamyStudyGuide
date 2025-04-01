@@ -9,12 +9,14 @@ export default function LessonsHome() {
   return (
     <div>
       <Header />
-      <div className="flex flex-col items-center justify-center">
-        <h1 className=" font-[family-name:var(--font-courier-prime)] text-2xl mt-0 mb-3">LESSONS</h1>
-        <div className="bg-[var(--asset-color)] w-full h-[610px] px-80 py-9 rounded-sm">
-          <div className="grid grid-cols-2 grid-rows-2 gap-5 w-full h-full">
-            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer" onClick={() => router.push('/lessons/spanish')}>
-              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-13 h-13 ml-12 mt-5">
+      <div className="flex flex-col items-center justify-center py-2">
+        <h1 className="font-[family-name:var(--font-courier-prime)] text-2xl md:text-3xl mb-2 text-center">LESSONS</h1>
+        <div className="bg-[var(--asset-color)] w-full min-h-[610px] py-4 px-2 sm:py-6 sm:px-4 md:px-8 lg:px-16 xl:px-80 rounded-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 h-[550px]">
+
+            {/* Card: ESPAÑOL */}
+            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer p-4 flex flex-col h-full" onClick={() => router.push('/lessons/spanish')}>
+              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-12 h-12 sm:w-13 sm:h-13 ml-6">
                 <Image
                   className="mt-0"
                   src="../icons/ri--book-line.svg"
@@ -24,11 +26,15 @@ export default function LessonsHome() {
                   priority
                 />
               </div>
-              <h3 className="text-white ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">ESPAÑOL</h3>
-              <p className="text-white mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Mejora tus habilidades de lectura, escritura y comprension del lenguaje espñol.</p>
+              <div className="flex-grow flex flex-col justify-start">
+                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">ESPAÑOL</h3>
+                <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Mejora tus habilidades de lectura, escritura y comprension del lenguaje espñol.</p>
+              </div>
             </div>
-            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer" onClick={() => router.push('/status/under-construction')}>
-              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-13 h-13 ml-12 mt-5">
+
+            {/* Card: MATEMÁTICAS */}
+            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer p-4 flex flex-col h-full" onClick={() => router.push('/status/under-construction')}>
+              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-12 h-12 sm:w-13 sm:h-13 ml-6">
                 <Image
                   className="mt-0"
                   src="../icons/proicons--calculator.svg"
@@ -38,11 +44,15 @@ export default function LessonsHome() {
                   priority
                 />
               </div>
-              <h3 className="text-white ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">MATEMATICAS</h3>
-              <p className="text-white mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Desarrolla tu pensamiento lógico y resolución de problemas matemáticos.</p>
+              <div className="flex-grow flex flex-col justify-start">
+                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">MATEMÁTICAS</h3>
+                <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Desarrolla tu pensamiento lógico y resolución de problemas matemáticos.</p>
+              </div>
             </div>
-            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer" onClick={() => router.push('/status/under-construction')}>
-              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-13 h-13 ml-12 mt-5">
+
+            {/* Card: CIENCIAS NATURALES */}
+            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer p-4 flex flex-col h-full" onClick={() => router.push('/status/under-construction')}>
+              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-12 h-12 sm:w-13 sm:h-13 ml-6">
                 <Image
                   className="mt-0"
                   src="../icons/ri--leaf-line.svg"
@@ -52,11 +62,15 @@ export default function LessonsHome() {
                   priority
                 />
               </div>
-              <h3 className="text-white ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS<br />NATURALEZ</h3>
-              <p className="text-white mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Explora el fascinante mundo de la biología, química y física.</p>
+              <div className="flex-grow flex flex-col justify-start">
+                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS NATURALES</h3>
+                <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Explora el fascinante mundo de la biología, química y física.</p>
+              </div>
             </div>
-            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer" onClick={() => router.push('/status/under-construction')}>
-              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-13 h-13 ml-12 mt-5">
+
+            {/* Card: CIENCIAS SOCIALES */}
+            <div className="bg-[var(--secondary-color)] rounded-2xl cursor-pointer p-4 flex flex-col h-full" onClick={() => router.push('/status/under-construction')}>
+              <div className="bg-[var(--asset-color)] flex items-center justify-center rounded-full w-12 h-12 sm:w-13 sm:h-13 ml-6">
                 <Image
                   className="mt-0"
                   src="../icons/fluent-mdl2--world.svg"
@@ -66,8 +80,10 @@ export default function LessonsHome() {
                   priority
                 />
               </div>
-              <h3 className="text-white ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS<br />SOCIALES</h3>
-              <p className="text-white mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Descrube la historia, geografia y las culturas del mundo.</p>
+              <div className="flex-grow flex flex-col justify-start">
+                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS SOCIALES</h3>
+                <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Descubre la historia, geografía y las culturas del mundo.</p>
+              </div>
             </div>
           </div>
         </div>
