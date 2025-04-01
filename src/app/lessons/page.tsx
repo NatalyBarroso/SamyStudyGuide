@@ -27,7 +27,7 @@ export default function LessonsHome() {
                 />
               </div>
               <div className="flex-grow flex flex-col justify-start">
-                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">ESPAÑOL</h3>
+                <h3 className="text-white text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">ESPAÑOL</h3>
                 <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Mejora tus habilidades de lectura, escritura y comprension del lenguaje espñol.</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function LessonsHome() {
                 />
               </div>
               <div className="flex-grow flex flex-col justify-start">
-                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">MATEMÁTICAS</h3>
+                <h3 className="text-white text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">MATEMÁTICAS</h3>
                 <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Desarrolla tu pensamiento lógico y resolución de problemas matemáticos.</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function LessonsHome() {
                 />
               </div>
               <div className="flex-grow flex flex-col justify-start">
-                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS NATURALES</h3>
+                <h3 className="text-white text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS NATURALES</h3>
                 <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Explora el fascinante mundo de la biología, química y física.</p>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function LessonsHome() {
                 />
               </div>
               <div className="flex-grow flex flex-col justify-start">
-                <h3 className="text-white pl-4 text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS SOCIALES</h3>
+                <h3 className="text-white text-left sm:ml-10 mt-4 text-xl font-[family-name:var(--font-cutive-mono)]">CIENCIAS SOCIALES</h3>
                 <p className="text-white mx-4 sm:mx-10 mt-4 font-[family-name:var(--font-cutive-mono)]">Descubre la historia, geografía y las culturas del mundo.</p>
               </div>
             </div>

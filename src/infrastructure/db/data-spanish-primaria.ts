@@ -1,8 +1,8 @@
 export const data_spanish_primaria = [
   {
-    id: 1.1,
+    id: "1.1",
     title: "Recuento histórico",
-    description:"En esta unidad, el estudiante comprenderá qué es un recuento histórico, cuáles son sus características fundamentales y cómo debe estructurarse para transmitir información de manera clara y precisa. Al finalizar, podrá identificar y aplicar estos elementos en la redacción de sus propios textos históricos.",
+    description: "Identificación de una sucesión cronológica de hechos. Inferencia de fechas y lugares. Identificación de la información relevante.",
     goals: [
       "Identificar la estructura y características principales de un recuento histórico.",
       "Comprender la importancia de la sucesión cronológica en la narración de hechos históricos.",
@@ -12,122 +12,131 @@ export const data_spanish_primaria = [
     ],
 
     introduction: "El recuento histórico es un tipo de texto narrativo que tiene como objetivo relatar hechos del pasado de manera clara, objetiva y organizada. A través de una estructura definida, se presentan acontecimientos en orden cronológico, resaltando su relevancia y contexto para que el lector pueda comprender su impacto en la historia.\nEn este módulo, aprenderás a identificar las características esenciales de un recuento histórico, analizar la forma en que se organizan los hechos y reconocer la importancia de fechas, lugares y actores clave en la narración. Además, desarrollarás habilidades para seleccionar información relevante y redactar textos históricos con coherencia y precisión.\nEste conocimiento no solo te permitirá interpretar mejor los relatos del pasado, sino que también te ayudará a construir narraciones estructuradas y bien fundamentadas, esenciales en cualquier disciplina que requiera el manejo de información histórica.",
+  },
 
-    unit_1: {
-      title: "Unidad 1: Características y estructura del recuento histórico",
-      description: "En esta unidad, el estudiante comprenderá qué es un recuento histórico, cuáles son sus características fundamentales y cómo debe estructurarse para transmitir información de manera clara y precisa. Al finalizar, podrá identificar y aplicar estos elementos en la redacción de sus propios textos históricos.",
-      key_themes: [
-        {
-          "thene": "Definición de recuento histórico."
-        },
-        {
-          "thene": "Características principales",
-          "subpoints": [
-            "Objetividad.",
-            "Uso de lenguaje formal.",
-            "Empleo de fuentes confiables."
-          ]
-        },
-        {
-          "thene": "Estructura del recuento histórico",
-          "subpoints": [
-            "Introducción (contexto y presentación del tema).",
-            "Desarrollo (sucesión cronológica de los hechos).",
-            "Conclusión (consecuencias y reflexiones finales)."
-          ]
-        }
-      ],
+  {
+    id: "1.2",
+    title: "Reportaje",
+    description: "Identificación de las características generales de un reportaje. Interpretación de la información. Identificación de la idea principal. Selección de información relevante.",
+    goals: [
+      "Identificar las características principales de un reportaje.",
+      "Interpretar correctamente la información presentada en un reportaje.",
+      "Distinguir la idea principal de un reportaje y separar la información relevante de la secundaria.",
+      "Elaborar un reportaje sencillo siguiendo una estructura lógica y clara.."
+    ],
 
-      themes: {
-        1: {
-          title: "Definición de recuento histórico",
-          text: [
-            "El recuento histórico es un tipo de texto narrativo que expone hechos del pasado de manera ordenada y objetiva. Su propósito es informar sobre sucesos relevantes, destacando la relación de causa y efecto entre ellos, y permitiendo al lector comprender su impacto en la historia."
-          ],
-          examples: {
-            t_start: "Consideremos el recuento de la Revolución Francesa:",
-            tq: "La Revolución Francesa comenzó en 1789 debido a una crisis económica y al descontento social con la monarquía. La toma de la Bastilla el 14 de julio marcó el inicio del conflicto, seguido por la Declaración de los Derechos del Hombre y del Ciudadano. Finalmente, en 1793, el rey Luis XVI fue ejecutado, dando paso a una nueva etapa política en Francia.",
-            t_end: "En este ejemplo, se observa la narración de hechos históricos de manera objetiva y en orden cronológico."
-          },
+    introduction: "El reportaje es un tipo de texto periodístico que investiga y desarrolla un tema o acontecimiento de manera profunda y detallada. Su objetivo es proporcionar al lector una comprensión amplia y completa de un asunto de interés, combinando información verificable, testimonios, entrevistas, datos estadísticos y contexto histórico.\n A diferencia de la noticia, que informa de manera breve y objetiva sobre un hecho reciente, el reportaje analiza el tema desde diferentes perspectivas, explicando causas, consecuencias y opiniones de expertos o personas involucradas. Además, puede incluir elementos narrativos que hacen su lectura más atractiva y dinámica.\nLos reportajes pueden abordar una gran variedad de temas, como ciencia, cultura, deportes, medio ambiente, sociedad o acontecimientos históricos. Gracias a su estructura y profundidad, permiten al lector reflexionar y comprender mejor la realidad desde un punto de vista más completo y documentado."
+  },
 
-          activities: {
-            title: "Actividad: ¿Es un recuento histórico?",
-            instructions: "Lee el siguiente fragmento y determina si cumple con la definición de un recuento histórico. Justifica tu respuesta.",
-            content: "La guerra de independencia de México fue un evento clave para la historia del país. Fue un proceso complejo, lleno de batallas y personajes icónicos. El Grito de Dolores en 1810 marcó su inicio, y tras más de una década de lucha, México logró su independencia en 1821."
-          }
-        },
-        2: {
-          title: "Características principales del recuento histórico",
-          text: [
-            "Para que un texto pueda considerarse un recuento histórico, debe cumplir con ciertas características esenciales que permiten que la narración sea clara, precisa y objetiva. A continuación, se detallan las tres características más importantes:",
-            "Objetividad: La objetividad es fundamental en un recuento histórico, ya que este tipo de texto tiene el propósito de informar sin introducir opiniones personales ni juicios de valor. Un recuento histórico debe basarse en hechos verificables y presentarlos de manera imparcial. La objetividad asegura que el lector pueda entender los eventos tal como ocurrieron, sin la influencia de creencias, emociones o prejuicios del autor.",
-            "Uso del lenguaje formal: El recuento histórico utiliza un lenguaje formal y técnico para garantizar que la información sea precisa y comprensible. Evita el uso de expresiones coloquiales o informales que puedan restar seriedad al texto. Este tipo de lenguaje permite que el recuento sea entendido por un público amplio y, al mismo tiempo, se mantenga adecuado para contextos académicos y profesionales.",
-            "Empleo de fuentes confiables: El recuento histórico debe basarse en fuentes confiables que proporcionen información verificable. Las fuentes pueden incluir libros de historia, documentos oficiales, entrevistas con expertos, investigaciones académicas y archivos históricos. La inclusión de fuentes confiables le da al recuento credibilidad y permite al lector confiar en la precisión de los datos presentados.",
-            "En resumen, un recuento histórico debe ser objetivo, utilizar un lenguaje formal y estar respaldado por fuentes confiables. Estas características son esenciales para garantizar que el texto sea claro, preciso y útil para los lectores que desean comprender los hechos históricos tal como ocurrieron, sin interpretaciones o distorsiones."
-          ],
-          examples: {
-            e1: {
-              t_start: "Ejemplo:",
-              tq: "El 11 de septiembre de 2001, un grupo de terroristas secuestró aviones comerciales y los estrelló contra las Torres Gemelas en Nueva York y el Pentágono en Washington D.C., causando la muerte de miles de personas.",
-              t_end: "Este es un ejemplo de objetividad porque se presenta la información de manera clara, sin opiniones ni juicios sobre el evento. Solo se mencionan los hechos que ocurrieron, sin agregar una valoración sobre ellos."
-            },
-            e2: {
-              t_start: "Ejemplo:",
-              tq: "La caída del Imperio Romano de Occidente, en el año 476 d.C., marcó el fin de un período histórico que abarcó más de 500 años. Esta disolución fue el resultado de múltiples factores internos y externos, incluyendo invasiones bárbaras y problemas económicos.",
-              t_end: "En este ejemplo, el lenguaje es formal y se utiliza de manera precisa para explicar los hechos. No se usan expresiones informales ni ambiguas, lo que asegura que el mensaje sea claro y profesional."
-            },
-            e3: {
-              t_start: "Ejemplo:",
-              tq: "Según el informe de la Comisión Warren, el asesinato del presidente John F. Kennedy en 1963 fue llevado a cabo por un solo tirador, Lee Harvey Oswald, aunque otras teorías de conspiración han surgido a lo largo de los años.",
-              t_end: "Aquí se hace referencia a una fuente confiable (el informe oficial de la Comisión Warren) para respaldar la información. La mención de esta fuente agrega credibilidad al recuento, ya que se trata de un documento oficial que fue ampliamente revisado por expertos en su momento."
-            }
-          },
+  {
+    id: "1.3",
+    title: "Textos científicos y populares",
+    description: "Identificación de las características de ambos tipos de textos.",
+    goals: [
+      "Diferenciar entre textos científicos y textos populares.",
+      "Identificar las características y propósitos de ambos tipos de textos.",
+      "Analizar y comparar la estructura y el lenguaje de un texto científico y un texto popular.",
+      "Redactar un texto popular basado en la información de un texto científico."
+    ],
 
-          activities: {}
-        },
-        3: {
-          title: "Estructura del recuento histórico",
-          text: [
-            "La estructura de un recuento histórico es fundamental para organizar y presentar los hechos de manera coherente y comprensible. Un recuento bien estructurado guía al lector a través de los eventos de forma clara, lógica y cronológica, permitiendo una fácil comprensión del desarrollo de los sucesos y sus consecuencias. A continuación, se describen las tres secciones principales que componen la estructura de un recuento histórico: Introducción, Desarrollo y Conclusión.",
-            "Introducción: La introducción de un recuento histórico tiene como objetivo presentar el contexto del evento y explicar su relevancia histórica. Aquí se describe el marco temporal y geográfico, los actores involucrados, y se establece la importancia del hecho en cuestión. La introducción debe captar la atención del lector y preparar el terreno para los detalles que se desarrollarán en la siguiente sección.\nUna buena introducción no solo debe situar al lector en el contexto adecuado, sino que también debe establecer el propósito del recuento. Por ejemplo, si el evento es significativo para entender un cambio social o político, la introducción debe mencionar cómo ese evento afectó a una nación o a un grupo de personas. Además, se debe evitar entrar en detalles minuciosos que serán tratados más adelante; la introducción es solo un panorama general del evento.",
-            "Desarrollo: El desarrollo es la parte más extensa del recuento histórico. En esta sección, se narra la sucesión de los hechos de forma cronológica, explicando las causas, los eventos principales y sus consecuencias inmediatas. El desarrollo debe ser claro y detallado, presentando los sucesos de manera que el lector pueda seguir el curso de los eventos sin confusión.\nEl desarrollo debe estar organizado de manera cronológica, lo que significa que los eventos deben presentarse en el orden en que ocurrieron. Es importante conectar los diferentes eventos para que el lector pueda entender cómo se relacionan entre sí. Si bien el desarrollo puede ser más extenso que la introducción o la conclusión, siempre debe mantener el enfoque en los hechos, evitando que se desvíe hacia temas o detalles irrelevantes. Además, debe incluir las personas clave, las decisiones tomadas, y los momentos críticos que cambiaron el curso de los acontecimientos.",
-            "Conclusión: La conclusión es la sección final del recuento histórico, donde se resumen las consecuencias del evento y se reflexiona sobre su impacto a largo plazo. En esta parte, se destacan las lecciones aprendidas, las transformaciones que el evento causó y cómo influenció otros acontecimientos históricos. La conclusión debe ayudar al lector a comprender la relevancia del evento en un contexto más amplio.\nLa conclusión no debe ser simplemente un resumen de los hechos descritos en el desarrollo, sino que debe ofrecer una visión de cómo esos hechos cambiaron el rumbo de la historia. Esto incluye no solo las consecuencias inmediatas, sino también los efectos que perduraron con el tiempo. Una conclusión fuerte proporcionará una reflexión sobre la importancia del evento y cómo este encaja en el panorama histórico general."
-          ],
+    introduction: "En nuestra vida diaria estamos rodeados de información: noticias, artículos, reportajes, videos informativos, enciclopedias en línea, entre otros. Esta información puede presentarse de distintas maneras, dependiendo del público al que va dirigida y del propósito que busca alcanzar. En este módulo exploraremos dos tipos de textos muy comunes: los textos científicos y los textos populares.\nLos textos científicos se enfocan en comunicar conocimientos especializados, generalmente dirigidos a personas con formación en un área del saber. Por otro lado, los textos populares buscan acercar esa información al público general, utilizando un lenguaje más accesible y cotidiano.\nA lo largo de esta unidad aprenderás a reconocer las características principales de ambos tipos de textos, su lenguaje, su estructura y su intención comunicativa. Este conocimiento te permitirá no solo comprender mejor la información que consumes, sino también desarrollar habilidades para producir textos adecuados según el contexto y el público."
+  },
 
-          examples: {
-            e1: {
-              t_start: "Ejemplo:",
-              tq: "La Revolución Industrial, que comenzó a finales del siglo XVIII en Inglaterra, transformó radicalmente las sociedades y economías de todo el mundo. Este proceso de cambio económico, social y tecnológico no solo alteró la producción de bienes, sino que también redefinió la vida cotidiana, la urbanización y las relaciones laborales.",
-              t_end: "Aquí se presenta el contexto (Inglaterra a finales del siglo XVIII) y se establece la importancia histórica de la Revolución Industrial."
-            },
-            e2: {
-              t_start: "Ejemplo:",
-              tq: "A medida que las máquinas comenzaron a reemplazar el trabajo manual, las fábricas crecieron en número y tamaño, atrayendo a más trabajadores. En 1800, las fábricas de textiles fueron las más prominentes, pero pronto otros sectores, como el de la minería y la metalurgia, también se industrializaron. Las condiciones laborales, sin embargo, eran duras y las jornadas eran largas, lo que llevó a que se crearan los primeros movimientos obreros en busca de mejores derechos.",
-              t_end: "Este párrafo presenta una secuencia cronológica clara de cómo el desarrollo de las fábricas llevó a un cambio en las condiciones laborales, un suceso clave en la Revolución Industrial."
-            },
-            e3: {
-              t_start: "Ejemplo:",
-              tq: "La Revolución Industrial no solo alteró la producción de bienes, sino que también generó una serie de cambios sociales, como el crecimiento de las ciudades y la formación de nuevas clases sociales. Aunque trajo avances en tecnología y economía, también dejó consecuencias negativas, como la explotación laboral y el deterioro del medio ambiente. Las reformas que surgieron en respuesta a estos problemas continuaron moldeando las sociedades industriales durante todo el siglo XIX.",
-              t_end: "En este ejemplo, se reflexiona sobre las consecuencias de la Revolución Industrial, tanto positivas como negativas, y se menciona su impacto a largo plazo en las sociedades que la vivieron."
-            }
-          },
+  {
+    id: "1.4",
+    title: "Cuestionarios",
+    description: "Identificación de las formas de respuestas requeridas en cuestionarios. Elaboración de cuestionarios, según los propósitos de las preguntas.",
+    goals: [
+      "Identificar las diferentes formas de respuesta en un cuestionario.",
+      "Distinguir entre preguntas cerradas y abiertas.",
+      "Elaborar cuestionarios eficaces de acuerdo con los objetivos y propósitos definidos.",
+      "Evaluar la efectividad de un cuestionario mediante la interpretación de las respuestas obtenidas."
+    ],
 
-          activities: {
-            title: "Actividad: Redacción de un recuento histórico",
-            instructions: "Ahora que has comprendido la estructura del recuento histórico, es momento de poner en práctica lo aprendido. Elige un evento histórico significativo (puede ser uno que hayas estudiado o uno que te interese investigar) y redacta un recuento histórico siguiendo la estructura que hemos visto:",
-            content: [
-              "1. Introducción: Presenta el contexto del evento y su relevancia.",
-              "2. Desarrollo: Narra los hechos de forma cronológica, conectando los eventos y detallando las causas y consecuencias inmediatas.",
-              "3. Conclusión: Resume las consecuencias del evento y reflexiona sobre su impacto a largo plazo."
-            ]
-          }
-        }
-      },
-      summary: [
-        "Un recuento histórico es un texto narrativo que relata hechos del pasado de manera objetiva y ordenada.",
-        "Sus características principales incluyen la objetividad, el uso de lenguaje formal y la utilización de fuentes confiables.",
-        "Su estructura consta de introducción, desarrollo y conclusión, cada una con una función específica en la narración de los hechos."
-      ]
-    }
+    introduction: "Los cuestionarios son herramientas clave en la recolección de información, evaluación de conocimientos y análisis de opiniones. Diseñarlos de forma adecuada implica comprender los distintos tipos de respuestas que pueden requerirse y cómo estas se relacionan con los objetivos del instrumento.\nEn este módulo, exploraremos las formas más comunes de respuestas —como las abiertas, cerradas, de opción múltiple, entre otras— y aprenderemos a elaborar cuestionarios que respondan a distintos fines: diagnósticos, formativos, evaluativos o de investigación.\nA través de ejemplos, actividades prácticas y recomendaciones, te prepararás para crear cuestionarios efectivos, claros y alineados con sus propósitos específicos."
+  },
+
+  {
+    id: "1.5",
+    title: "Ortografía y puntuación",
+    description: "Uso de v, b, s, c, z, ll, y, g, j, palabras homófonas. Acentuación de palabras agudas, graves, esdrújulas y monosílabos. Uso de los signos de puntuación en un párrafo.",
+    goals: [
+      "Aplicar correctamente las reglas de uso de las letras v, b, s, c, z, ll, y, g y j.",
+      "Distinguir y emplear adecuadamente las palabras homófonas.",
+      "Utilizar correctamente las reglas de acentuación en palabras agudas, graves, esdrújulas y monosílabos.",
+      "Emplear adecuadamente los signos de puntuación para mejorar la claridad y comprensión de un texto."
+    ],
+
+    introduction: "La ortografía y la puntuación son herramientas esenciales para una comunicación escrita clara y efectiva. Conocer las reglas del idioma permite no solo evitar errores comunes, sino también expresar ideas con precisión. En este módulo abordaremos aspectos fundamentales como el uso adecuado de letras que suelen confundirse (como la v y la b, o la g y la j), la diferencia entre palabras homófonas, y las normas de acentuación que rigen en el español. Además, aprenderemos cómo emplear correctamente los signos de puntuación para estructurar mejor los textos y facilitar su comprensión. Este conocimiento es clave tanto para el ámbito académico como para la vida cotidiana."
+  },
+
+  {
+    id: "1.6",
+    title: "Sintaxis",
+    description: "Identificación de las partes de una oración simple. Identificación de la estructura y concordancia de oraciones. Identificación del tipo de oraciones compuestas: yuxtapuestas, coordinadas y subordinadas. Uso de nexos.",
+    goals: [
+      "Identificar las partes que componen una oración simple.",
+      "Reconocer la estructura y concordancia gramatical de las oraciones.",
+      "Distinguir los diferentes tipos de oraciones compuestas (yuxtapuestas, coordinadas y subordinadas).",
+      "Utilizar adecuadamente los nexos para unir ideas y construir oraciones complejas."
+    ],
+
+    introduction: "La sintaxis es un componente fundamental del lenguaje que se encarga de estudiar cómo se organizan y enlazan las palabras para formar oraciones con sentido. Comprender la sintaxis no solo mejora la calidad de nuestra expresión escrita y oral, sino que también nos permite analizar con precisión el funcionamiento del idioma.\nEn este módulo explorarás las bases para identificar las partes esenciales de una oración simple, como el sujeto y el predicado, y entenderás cómo se relacionan entre sí para lograr la concordancia gramatical. Además, aprenderás a distinguir entre diferentes tipos de oraciones compuestas: aquellas que se yuxtaponen, las que se coordinan mediante conjunciones, y las que dependen unas de otras a través de subordinación.\nPor último, desarrollarás habilidades para utilizar nexos con propiedad, lo que te permitirá construir textos más complejos, fluidos y cohesionados. Este conocimiento será clave para comunicar ideas con claridad y eficacia en diversos contextos académicos y profesionales."
+  },
+
+  {
+    id: "1.7",
+    title: "Léxico",
+    description: "Inferencia de significado de palabras según el contexto. Uso del diccionario.",
+    goals: [
+      "Inferir el significado de palabras desconocidas a partir del contexto en un texto.",
+      "Utilizar correctamente el diccionario para obtener definiciones, sinónimos, antónimos y ejemplos de uso.",
+      "Ampliar y enriquecer su vocabulario mediante el análisis y práctica constante de nuevas palabras.",
+      "Mejorar la comprensión lectora a través del reconocimiento de palabras clave y términos contextuales."
+    ],
+
+    introduction: "El lenguaje es una herramienta poderosa para pensar, comunicarse y comprender el mundo. Dentro de este, el léxico representa el conjunto de palabras que usamos para expresar nuestras ideas y entender las de los demás. Cuanto más amplio y preciso sea nuestro vocabulario, más claras y efectivas serán nuestras interacciones orales y escritas.\nEn este módulo aprenderás a descubrir el significado de palabras desconocidas sin necesidad de detenerte o interrumpir la lectura, utilizando pistas del contexto. También reforzarás el uso del diccionario como una herramienta esencial no solo para consultar definiciones, sino para explorar sinónimos, antónimos y ejemplos que enriquezcan tu expresión.\nDominar estas habilidades te ayudará a mejorar tu comprensión lectora, desarrollar un vocabulario más amplio y preciso, y comunicarte con mayor soltura y claridad tanto en el ámbito académico como en la vida cotidiana."
+  },
+
+  {
+    id: "1.8",
+    title: "Cuento",
+    description: "Identificación de las partes de un cuento. Inferencia de las características de los personajes. Comprensión de figuras retóricas: metáforas, símiles, analogías, reiteración, entre otros.",
+    goals: [
+      "Identificar las partes principales de un cuento y comprender su estructura narrativa.",
+      "Inferir las características y motivaciones de los personajes a partir de sus acciones y diálogos.",
+      "Reconocer y comprender el uso de figuras retóricas como metáforas, símiles, analogías y reiteraciones para interpretar el mensaje y estilo del autor.",
+      "Desarrollar la capacidad para analizar e interpretar cuentos, comprendiendo su intención comunicativa y simbólica."
+    ],
+
+    introduction: "El cuento es una de las formas más antiguas y universales de la narración. Su brevedad y estructura clara permiten transmitir enseñanzas, emociones e ideas profundas de manera accesible y atractiva. Cada cuento es una ventana a un mundo construido con palabras, donde cada elemento narrativo cumple una función clave: desde el planteamiento inicial hasta el desenlace, pasando por personajes que evolucionan y conflictos que se resuelven.\nEn este módulo, exploraremos las partes que conforman un cuento, como la introducción, el nudo y el desenlace, y aprenderemos a identificar su función dentro de la estructura narrativa. También nos adentraremos en el análisis de los personajes, observando sus comportamientos, decisiones y formas de hablar para inferir sus rasgos y motivaciones. Finalmente, conoceremos diversas figuras retóricas que los autores emplean para dotar de belleza, profundidad y estilo a sus historias, como las metáforas, los símiles, las analogías y la reiteración.\nEste recorrido no solo enriquecerá tu comprensión lectora, sino que también potenciará tu capacidad para interpretar los relatos desde una mirada crítica y creativa."
+  },
+
+  {
+    id: "1.9",
+    title: "Textos instructivos",
+    description: "Elaboración de diagramas y notas. Uso de modos y tiempos verbales adecuados.",
+    goals: [
+      "Reconocer las características y la estructura de los textos instructivos.",
+      "Elaborar instrucciones claras y precisas mediante el uso adecuado de modos y tiempos verbales.",
+      "Crear diagramas y notas para organizar y simplificar la información en textos instructivos.",
+      "Redactar textos instructivos utilizando un lenguaje directo y secuencial."
+    ],
+
+    introduction: "Imagina que necesitas explicarle a alguien cómo armar un mueble, preparar una receta o instalar una aplicación. Para que esa persona pueda seguir tus indicaciones sin problemas, tus instrucciones deben ser claras, ordenadas y fáciles de entender. Aquí es donde entran en juego los textos instructivos.\nEste tipo de textos tienen como propósito principal guiar al lector paso a paso en la realización de una tarea. Su eficacia depende del uso preciso del lenguaje, especialmente de los modos y tiempos verbales, así como de una estructura lógica que facilite la comprensión.\nA través de ejemplos, actividades guiadas y ejercicios prácticos, desarrollarás habilidades para comunicar procesos de forma precisa y ordenada. Este conocimiento no solo te será útil en el ámbito académico, sino también en tu vida cotidiana."
+  },
+
+  {
+    id: "1.10",
+    title: "Categorías de información",
+    description: "Clasificación de información en secciones temáticas. Jerarquización de la información.",
+    goals: [
+      "Identificar las diferentes categorías en las que puede organizarse la información.",
+      "Clasificar la información en secciones temáticas de manera lógica y estructurada.",
+      "Jerarquizar la información para establecer una relación clara entre los temas principales y secundarios.",
+      "Organizar la información para facilitar su análisis, comprensión y consulta."
+    ],
+
+    introduction: "En un mundo saturado de datos, saber cómo organizar la información de manera clara y significativa es una habilidad fundamental. Clasificar y jerarquizar la información no solo permite estructurar mejor el conocimiento, sino que también facilita su comprensión, análisis y uso en contextos académicos, laborales o personales.\nEste módulo te guiará en el proceso de identificar las diferentes categorías en las que puede dividirse la información, agruparla en secciones temáticas coherentes y jerarquizar los contenidos según su nivel de importancia o relación con otros elementos. Aprenderás a establecer relaciones lógicas entre temas principales y secundarios, y a construir esquemas informativos que favorezcan la consulta y la toma de decisiones.\nA lo largo del módulo, desarrollarás estrategias para organizar información de manera eficiente, lo que te permitirá abordar textos, proyectos o investigaciones con una estructura más clara y efectiva."
   }
 ]

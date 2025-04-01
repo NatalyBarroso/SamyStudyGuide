@@ -16,7 +16,7 @@ export default function First() {
 
         <div className="bg-[var(--asset-color)] flex flex-col justify-center items-center w-full max-w-5xl gap-4 rounded-lg shadow-md px-4 py-6 sm:px-6 lg:px-10">
           {lessons_spanish_p.map((lesson, index) => (
-            <LessonCard key={index} text={lesson.title} isCheck={false} />
+            <LessonCard key={index} text={lesson.title} id={lesson.id} isCheck={false} />
           ))}
         </div>
       </main>
