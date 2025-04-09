@@ -1,4 +1,4 @@
-export const data_spanish_primaria = [
+export const modules_data = [
   {
     id: "1.1",
     title: "Recuento histórico",

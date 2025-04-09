@@ -1,5 +1,6 @@
 'use client';
 import Header from "../../../ui/components/layout/Header";
+import Footer from "@/ui/components/layout/Footer";
 import "../../../styles/globals.css";
 import { useRouter } from "next/navigation";
 
@@ -64,9 +65,7 @@ export default function Spanish() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-black w-full h-12 flex items-center justify-center mt-auto">
-        <p className="text-white text-sm">© 2025 Todos los derechos reservados</p>
-      </footer>
+      <Footer />
     </div>
   );
 
