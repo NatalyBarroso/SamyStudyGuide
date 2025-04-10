@@ -72,5 +72,15 @@ export type ActivityOrderText = {
   correctOrder: string[]
 }
 
+export type ActivityReWrite = {
+  type: 're-write'
+  title: string
+  instructions: string
+  content: {
+    original: string
+    correct: string
+  }[]
+}
 
-export type Activity = ActivityInput | ActivityMultipleChoice | ActivityDragAnDrop | ActivityMultipleSelect | ActivityFillInTheBlanks | ActivityClassifyText | ActivityOrderText
+
+export type Activity = ActivityInput | ActivityMultipleChoice | ActivityDragAnDrop | ActivityMultipleSelect | ActivityFillInTheBlanks | ActivityClassifyText | ActivityOrderText | ActivityReWrite

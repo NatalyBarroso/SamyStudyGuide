@@ -1,3 +1,5 @@
+import StyledText from "@/ui/components/common/StyledText";
+
 interface ActivityOpenProps {
   title: string;
   instructions: string;
@@ -7,11 +9,18 @@ interface ActivityOpenProps {
 const ActivityInput = ({ title, instructions, content }: ActivityOpenProps) => {
   return (
     <div className="my-8">
-      <h3 className="text-base sm:text-lg font-bold font-[family-name:var(--font-courier-prime)">{title}</h3>
-      <p className="my-4">{instructions}</p>
-      {content.split('\n').map((line, index) => (
-        <p key={index} className="italic">{line}</p>
-      ))}
+      <h3 className="text-base sm:text-lg font-bold font-[family-name:var(--font-courier-prime)]">
+        {title}
+      </h3>
+
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
+
+      <div className="space-y-2">
+        <StyledText text={content} />
+      </div>
+
       <div className="mt-6">
         <label htmlFor="respuesta" className="block mb-2 font-semibold">Tu respuesta:</label>
         <textarea
@@ -22,7 +31,7 @@ const ActivityInput = ({ title, instructions, content }: ActivityOpenProps) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ActivityInput
+export default ActivityInput;

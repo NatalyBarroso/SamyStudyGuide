@@ -7,6 +7,7 @@ import {
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable'
 import { SortableItem } from './items/SortableItem'
+import StyledText from '../common/StyledText'
 
 interface OrderItem {
   id: string
@@ -50,7 +51,9 @@ const ActivityOrderText = ({ title, instructions, content, correctOrder }: Activ
   return (
     <div className="mt-8">
       <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-courier-prime)]">{title}</h3>
-      <p className="mb-4">{instructions}</p>
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
 
       <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={items.map((item) => item.id)} strategy={verticalListSortingStrategy}>

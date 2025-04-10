@@ -11,6 +11,8 @@ import ActivityFillInTheBlanks from '@/ui/components/activities/ActivityFillInTh
 import ActivityClassifyText from '@/ui/components/activities/ActivityClassifyText'
 import ActivityOrderText from '@/ui/components/activities/ActivityOrderText.tsx'
 import NoteCard from '@/ui/components/themes/NoteCard'
+import StyledText from "@/ui/components/common/StyledText";
+import ActivityReWrite from '../activities/ActivityReWrite'
 
 interface ThemeContentProps {
   text: string
@@ -20,62 +22,11 @@ interface ThemeContentProps {
 }
 
 const ThemeContent = ({ text, note, example, activity }: ThemeContentProps) => {
-  
-  const renderTextWithTags = (text: string) => {
-    const lines = text.split('\n')
-    const elements: React.ReactNode[] = []
-    let currentList: string[] = []
-
-    lines.forEach((line, index) => {
-      if (line.startsWith('<subheading>')) {
-        const content = line.replace('<subheading>', '').trim()
-
-        if (currentList.length > 0) {
-          elements.push(
-            <ul key={`list-${index}`} className="list-disc list-inside mb-4">
-              {currentList.map((item, i) => <li key={i}>{item}</li>)}
-            </ul>
-          )
-          currentList = []
-        }
-
-        elements.push(
-          <p key={`subheading-${index}`} className="mb-4">
-            <span className="border-b-[3px] border-[#7E99A3] pb-1 font-semibold">{content}</span>
-          </p>
-        )
-      } else if (line.startsWith('<list>')) {
-        const content = line.replace('<list>', '').trim()
-        currentList.push(content)
-      } else {
-        if (currentList.length > 0) {
-          elements.push(
-            <ul key={`list-${index}`} className="list-disc list-inside mb-4">
-              {currentList.map((item, i) => <li key={i}>{item}</li>)}
-            </ul>
-          )
-          currentList = []
-        }
-
-        if (line.trim() !== '') {
-          elements.push(<p key={`paragraph-${index}`} className="mb-4">{line}</p>)
-        }
-      }
-    })
-
-    if (currentList.length > 0) {
-      elements.push(
-        <ul key="list-end" className="list-disc list-inside mb-4">
-          {currentList.map((item, i) => <li key={i}>{item}</li>)}
-        </ul>
-      )
-    }
-
-    return elements
-  }
 
   const renderExample = () => {
-    switch (example?.type) {
+    if (!example) return null
+
+    switch (example.type) {
       case 'text':
         return (
           <ExampleCard
@@ -83,7 +34,7 @@ const ThemeContent = ({ text, note, example, activity }: ThemeContentProps) => {
             content={example.content}
             textEnd={example.textEnd}
           />
-        );
+        )
       case 'list':
         return (
           <ExampleList
@@ -91,7 +42,7 @@ const ThemeContent = ({ text, note, example, activity }: ThemeContentProps) => {
             listItems={example.content}
             textEnd={example.textEnd}
           />
-        );
+        )
       case 'table':
         return (
           <ExampleTable
@@ -99,11 +50,11 @@ const ThemeContent = ({ text, note, example, activity }: ThemeContentProps) => {
             tableData={example.content}
             textEnd={example.textEnd}
           />
-        );
+        )
       default:
-        return null;
+        return null
     }
-  };
+  }
 
   const renderActivity = () => {
     if (!activity) return null
@@ -116,19 +67,21 @@ const ThemeContent = ({ text, note, example, activity }: ThemeContentProps) => {
       case 'fill-in-the-blanks': return <ActivityFillInTheBlanks {...activity} />
       case 'classify-text': return <ActivityClassifyText {...activity} />
       case 'order-text': return <ActivityOrderText {...activity} />
+      case 're-write': return <ActivityReWrite {...activity} />
       default: return null
     }
   }
 
-  console.log(typeof note, note)
-
   return (
-    <>
-      {renderTextWithTags(text)}
+    <div className="w-full">
+      <div className="w-full">
+      <StyledText text={text} />
+      </div>
+
       {note && <NoteCard>{note}</NoteCard>}
       {renderExample()}
       {renderActivity()}
-    </>
+    </div>
   )
 }
 

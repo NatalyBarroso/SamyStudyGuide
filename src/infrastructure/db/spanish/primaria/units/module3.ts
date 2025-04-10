@@ -17,7 +17,7 @@ export const module3: readonly Unit[] = [
       {
         id: '1.1',
         title: 'Definición de texto científico',
-        text: 'Un texto científico es una producción escrita cuyo objetivo es **comunicar conocimientos de forma sistemática, clara y fundamentada**. Estos textos nacen generalmente de investigaciones o estudios académicos, y están dirigidos a lectores especializados que buscan información precisa sobre un tema.\n\nA continuación, se muestra un ejemplo de un enunciado típico dentro de un texto científico:\n\n> "El artículo publicado en la revista *Nature* explica los resultados de un experimento sobre las propiedades de un nuevo material conductor."\n\nEste fragmento ilustra cómo un texto científico comunica hallazgos específicos a través de publicaciones especializadas.\n\nLos textos científicos pueden encontrarse en diferentes formatos, como artículos de revistas, informes técnicos, tesis, capítulos de libros, entre otros.',
+        text: 'Un texto científico es una producción escrita cuyo objetivo es <bold>comunicar conocimientos de forma sistemática, clara y fundamentada</bold>. Estos textos nacen generalmente de investigaciones o estudios académicos, y están dirigidos a lectores especializados que buscan información precisa sobre un tema.\n\nLos textos científicos pueden encontrarse en diferentes formatos, como artículos de revistas, informes técnicos, tesis, capítulos de libros, entre otros.',
       
         example: {
           type: 'text',
@@ -29,7 +29,7 @@ export const module3: readonly Unit[] = [
       {
         id: '1.2',
         title: 'Propósito de un texto científico',
-        text: 'El propósito central de un texto científico es **informar de manera objetiva** sobre los hallazgos o resultados obtenidos tras un proceso de estudio o investigación. Algunos propósitos más específicos pueden ser:\n\n<list>Presentar nuevas teorías o descubrimientos.\n<list>Explicar fenómenos naturales o sociales.\n<list>Proponer soluciones a problemas.\n<list>Evaluar resultados de experimentos.',
+        text: 'El propósito central de un texto científico es <bold>informar de manera objetiva</bold> sobre los hallazgos o resultados obtenidos tras un proceso de estudio o investigación. Algunos propósitos más específicos pueden ser:\n\n<list>Presentar nuevas teorías o descubrimientos.</list><list>Explicar fenómenos naturales o sociales.</list><list>Proponer soluciones a problemas.</list><list>Evaluar resultados de experimentos.</list>',
       
         example: {
           type: 'text',
@@ -42,13 +42,13 @@ export const module3: readonly Unit[] = [
           type: 'input',
           title: 'Actividad: Analiza el propósito',
           instructions: 'Lee con atención el siguiente fragmento, el cual corresponde a la introducción de un texto científico. Observa qué se está investigando y cuál es el objetivo principal que se plantea:',
-          content: '“El objetivo de esta investigación es establecer una correlación entre el déficit hídrico y la disminución en la tasa de fotosíntesis en cultivos de maíz.”\n\n¿Cuál es el propósito del texto anterior?'
+          content: '“<italic>El objetivo de esta investigación es establecer una correlación entre el déficit hídrico y la disminución en la tasa de fotosíntesis en cultivos de maíz.</italic>”\n\n¿Cuál es el propósito del texto anterior?'
         }
       },
       {
         id: '1.3',
         title: 'Características del lenguaje científico',
-        text: 'El lenguaje en los textos científicos cumple una función clave: transmitir conocimiento de manera precisa, verificable y sin ambigüedades. Para lograrlo, utiliza recursos como:\n<list>Precisión: Evita generalidades o términos vagos. Cada palabra tiene un significado técnico específico.\n<list>Objetividad: No se incluyen opiniones personales ni lenguaje emocional.\n<list>Tecnicismo: Se emplean términos especializados del área correspondiente.\n\nA continuación, un ejemplo que muestra cómo se aplica este tipo de lenguaje:\n"Se empleó espectroscopía de masas para identificar los compuestos orgánicos presentes en la muestra.”\n\nEste fragmento utiliza un tecnicismo propio del área de química analítica ("espectroscopía de masas") y expresa con precisión el procedimiento llevado a cabo. Refleja cómo el lenguaje científico evita la ambigüedad y se enfoca en informar con exactitud.',
+        text: 'El lenguaje en los textos científicos cumple una función clave: <bold>transmitir conocimiento de manera precisa, verificable y sin ambigüedades</bold>. Para lograrlo, utiliza recursos como:\n<list><bold>Precisión:</bold> Evita generalidades o términos vagos. Cada palabra tiene un significado técnico específico.</list><list><bold>Objetividad:</bold> No se incluyen opiniones personales ni lenguaje emocional.</list><list><bold>Tecnicismo:</bold> Se emplean términos especializados del área correspondiente.</list>\n\nA continuación, un ejemplo que muestra cómo se aplica este tipo de lenguaje:\n"<italic>Se empleó espectroscopía de masas para identificar los compuestos orgánicos presentes en la muestra.</italic>”\n\nEste fragmento utiliza un tecnicismo propio del área de química analítica ("espectroscopía de masas") y expresa con precisión el procedimiento llevado a cabo. Refleja cómo el lenguaje científico evita la ambigüedad y se enfoca en informar con exactitud.',
 
         example: {
           type: 'table',
@@ -64,7 +64,7 @@ export const module3: readonly Unit[] = [
       {
         id: '1.4',
         title: 'Estructura de un texto científico',
-        text: 'Aunque puede variar ligeramente según el tipo de publicación, la mayoría de los textos científicos siguen una estructura común que permite organizar la información de manera lógica y coherente:\n\n<list>Introducción: Expone el problema o pregunta de investigación, el contexto y los objetivos.\n<list>Metodología: Detalla el procedimiento seguido, materiales, muestras y técnicas utilizadas.\n<list>Resultados: Presenta los hallazgos obtenidos, usualmente acompañados de tablas, gráficas o diagramas.\n<list>Discusión o análisis: Interpreta los resultados y los relaciona con otras investigaciones.\n<list>Conclusión: Resume los hallazgos más relevantes y sus implicaciones.\n<list>Referencias: Cita las fuentes utilizadas y consultadas.',
+        text: 'Aunque puede variar ligeramente según el tipo de publicación, la mayoría de los textos científicos siguen una estructura común que permite organizar la información de manera lógica y coherente:\n\n<list><bold>Introducción:</bold> Expone el problema o pregunta de investigación, el contexto y los objetivos.</list><list><bold>Metodología:</bold> Detalla el procedimiento seguido, materiales, muestras y técnicas utilizadas.</list><list><bold>Resultados:</bold> Presenta los hallazgos obtenidos, usualmente acompañados de tablas, gráficas o diagramas.</list><list><bold>Discusión o análisis:</bold> Interpreta los resultados y los relaciona con otras investigaciones.</list><list><bold>Conclusión:</bold> Resume los hallazgos más relevantes y sus implicaciones.</list><list><bold>Referencias:</bold> Cita las fuentes utilizadas y consultadas.</list>',
       
         example: {
           type: 'text',
@@ -79,15 +79,15 @@ export const module3: readonly Unit[] = [
           instructions: 'Observa los siguientes fragmentos y ordénalos según la estructura de un texto científico:',
           content: [
             {
-              id: '2',
+              id: '1',
               text: '“Se utilizaron 30 muestras de suelo de tres regiones distintas del país.”'
             },
             {
-              id: '3',
+              id: '2',
               text: '“Se concluye que el uso excesivo de fertilizantes altera significativamente el pH del suelo.”'
             },
             {
-              id: '1',
+              id: '3',
               text: '“Esta investigación busca analizar el impacto del uso de fertilizantes en la acidez del suelo.”'
             }
           ],
@@ -97,7 +97,7 @@ export const module3: readonly Unit[] = [
       {
         id: '1.5',
         title: 'Uso de datos, gráficas y citas en textos científicos',
-        text: 'Una de las principales fortalezas de los textos científicos es su sustento empírico. Esto significa que no solo presentan afirmaciones, sino que las respaldan con evidencia verificable, como:\n\n<list>Datos numéricos.\n<list>Representaciones visuales (gráficas, tablas, esquemas).\n<list>Citas de otros estudios o autores.',
+        text: 'Una de las principales fortalezas de los textos científicos es su <bold>sustento empírico</bold>. Esto significa que no solo presentan afirmaciones, sino que <bold>las respaldan con evidencia verificable</bold>, como:\n<list>Datos numéricos.</list><list>Representaciones visuales (gráficas, tablas, esquemas).</list><list>Citas de otros estudios o autores.</list>',
       
         example: {
           type: 'text',
@@ -138,7 +138,7 @@ export const module3: readonly Unit[] = [
       {
         id: '2.1',
         title: 'Definición de texto popular',
-        text: 'Un texto popular es una producción escrita que tiene como objetivo divulgar información de manera accesible a un público amplio y no especializado. Suele estar presente en medios como revistas de divulgación, artículos de prensa, blogs, folletos informativos y redes sociales.',
+        text: 'Un texto popular es una producción escrita que tiene como objetivo <bold>divulgar información de manera accesible</bold> a un público amplio y no especializado. Suele estar presente en medios como revistas de divulgación, artículos de prensa, blogs, folletos informativos y redes sociales.',
       
         example: {
           type: 'text',
@@ -150,7 +150,7 @@ export const module3: readonly Unit[] = [
       {
         id: '2.2',
         title: 'Propósito de un texto popular',
-        text: 'El propósito de un texto popular es informar, sensibilizar o educar a un público general sobre temas de interés, sin utilizar un lenguaje técnico ni especializado. Además, busca generar conciencia o facilitar la comprensión de temas complejos mediante un tono ameno y accesible.',
+        text: 'El propósito de un texto popular es <bold>informar, sensibilizar o educar</bold> a un público general sobre temas de interés, sin utilizar un lenguaje técnico ni especializado. Además, busca generar conciencia o facilitar la comprensión de temas complejos mediante un tono ameno y accesible.',
       
         example: {
           type: 'text',
@@ -169,7 +169,7 @@ export const module3: readonly Unit[] = [
       {
         id: '2.3',
         title: 'Características del lenguaje popular',
-        text: 'El lenguaje en los textos populares está diseñado para que cualquier persona pueda comprenderlo, sin necesidad de conocimientos previos. Se caracteriza por:\n\n<list>Claridad: se evita el uso de tecnicismos innecesarios.\n<list>Sencillez: se utilizan oraciones cortas y vocabulario cotidiano.\n<list>Ejemplos y analogías: se recurre a comparaciones y situaciones comunes para facilitar la comprensión.',
+        text: 'El lenguaje en los textos populares está diseñado para que cualquier persona pueda comprenderlo, sin necesidad de conocimientos previos. Se caracteriza por:\n\n<list><bold>Claridad:</bold> se evita el uso de tecnicismos innecesarios.</list><list><bold>Sencillez:</bold> se utilizan oraciones cortas y vocabulario cotidiano.</list><list><bold>Ejemplos y analogías:</bold> se recurre a comparaciones y situaciones comunes para facilitar la comprensión.</list>',
       
         example: {
           type: 'text',
@@ -181,7 +181,7 @@ export const module3: readonly Unit[] = [
       {
         id: '2.4',
         title: 'Estructura típica de los textos populares',
-        text: 'A diferencia de los textos científicos, los textos populares no siguen una estructura fija, pero suelen organizarse en partes reconocibles:\n\n<list>Título llamativo: capta la atención del lector.\n<list>Introducción breve: presenta el tema de forma sencilla.\n<list>Desarrollo: expone el contenido principal con explicaciones claras, ejemplos, cifras o testimonios.\n<list>Cierre o recomendación: resume la idea principal o sugiere una acción.',
+        text: 'A diferencia de los textos científicos, los textos populares no siguen una estructura fija, pero suelen organizarse en partes reconocibles:\n\n<list><bold>Título llamativo:</bold> capta la atención del lector.</list><list><bold>Introducción breve:</bold> presenta el tema de forma sencilla.</list><list><bold>Desarrollo:</bold> expone el contenido principal con explicaciones claras, ejemplos, cifras o testimonios.</list><list><bold>Cierre o recomendación:</bold> resume la idea principal o sugiere una acción.</list>',
       
         example: {
           type: 'text',
@@ -213,7 +213,7 @@ export const module3: readonly Unit[] = [
           type: 'input',
           title: 'Actividad: Compara y distingue',
           instructions: 'Lee el siguiente fragmento y responde:',
-          content: '"Los teléfonos inteligentes han cambiado la forma en que nos comunicamos. Estudios recientes muestran que, en promedio, una persona revisa su teléfono más de 80 veces al día.”\nPregunta: ¿Este fragmento pertenece a un texto científico o popular? Justifica tu respuesta.'
+          content: '"Los teléfonos inteligentes han cambiado la forma en que nos comunicamos. Estudios recientes muestran que, en promedio, una persona revisa su teléfono más de 80 veces al día.”\n<bold>Pregunta:</bold> ¿Este fragmento pertenece a un texto científico o popular? Justifica tu respuesta.'
         }
       }
     ],
@@ -239,7 +239,7 @@ export const module3: readonly Unit[] = [
       {
         id: '3.1',
         title: 'Diferencias clave entre textos científicos y textos populares',
-        text: 'Cuando un mismo tema se aborda desde un enfoque científico y desde uno popular, los cambios en la presentación son notables. Las diferencias se reflejan en aspectos como:\n\n<list>El nivel de tecnicismo del lenguaje, es decir, el uso o no de términos especializados.\n<list>La estructura del texto, que en los científicos tiende a ser más rígida y sistemática.\n<list>La profundidad con la que se aborda la información: los textos científicos son exhaustivos y detallados, mientras que los populares simplifican para facilitar la comprensión.\n<list>La finalidad del texto: en los científicos, el objetivo es comunicar hallazgos de forma rigurosa; en los populares, es acercar esa información al público general.\n\nEstas diferencias no implican que uno sea mejor que otro, sino que cumplen funciones distintas. Mientras los textos científicos están dirigidos a especialistas, los populares permiten que el conocimiento circule entre audiencias más amplias.',
+        text: 'Cuando un mismo tema se aborda desde un enfoque científico y desde uno popular, los cambios en la presentación son notables. Las diferencias se reflejan en aspectos como:\n\n<list>El <bold>nivel de tecnicismo</bold> del lenguaje, es decir, el uso o no de términos especializados.</list><list>La <bold>estructura</bold> del texto, que en los científicos tiende a ser más rígida y sistemática.</list><list>La <bold>profundidad</bold> con la que se aborda la información: los textos científicos son exhaustivos y detallados, mientras que los populares simplifican para facilitar la comprensión.</list><list>La <bold>finalidad</bold> del texto: en los científicos, el objetivo es comunicar hallazgos de forma rigurosa; en los populares, es acercar esa información al público general.</list>\nEstas diferencias no implican que uno sea mejor que otro, sino que cumplen funciones distintas. Mientras los textos científicos están dirigidos a especialistas, los populares permiten que el conocimiento circule entre audiencias más amplias.',
       
         example: {
           type: 'text',
@@ -267,13 +267,13 @@ export const module3: readonly Unit[] = [
       {
         id: '3.2',
         title: 'Adaptación de la información según el público objetivo',
-        text: 'Los autores de textos modifican el tono, el vocabulario y el nivel de detalle según el público al que se dirigen. Un texto científico puede transformarse en un texto popular manteniendo el mismo tema, pero cambiando la forma de presentarlo.\n\nLa adaptación facilita que la información sea entendida por personas sin formación específica, lo que es clave para la divulgación científica.',
+        text: 'Los autores de textos modifican el tono, el vocabulario y el nivel de detalle según el público al que se dirigen. Un texto científico puede transformarse en un texto popular manteniendo el mismo tema, pero cambiando la forma de presentarlo.',
       
         example: {
           type: 'text',
           textStart: '',
           content: '“Científico: La prevalencia de diabetes tipo 2 en adultos ha aumentado un 25% en la última década, según el estudio realizado por la OMS en 2022.”\n\n“Popular: Cada vez más personas tienen diabetes. En los últimos años, esta enfermedad ha aumentado mucho, especialmente entre los adultos.”',
-          textEnd: ''
+          textEnd: 'La adaptación facilita que la información sea entendida por personas sin formación específica, lo que es clave para la divulgación científica.'
         },
       
         activity: {
@@ -296,7 +296,7 @@ export const module3: readonly Unit[] = [
       {
         id: '3.3',
         title: 'Evaluación de la precisión y profundidad de la información',
-        text: 'No todos los textos que abordan temas científicos lo hacen con el mismo nivel de exactitud. Algunos textos populares pueden simplificar en exceso o incluso distorsionar la información si no están bien fundamentados.\n\nPor eso es importante aprender a evaluar:\n\n<list>Si el texto cita fuentes confiables.\n<list>Si presenta hechos verificables y no solo opiniones.\n<list>Si respeta la información original sin alterarla para hacerla más atractiva.',
+        text: 'No todos los textos que abordan temas científicos lo hacen con el mismo nivel de exactitud. Algunos textos populares pueden simplificar en exceso o incluso distorsionar la información si no están bien fundamentados.\n\nPor eso es importante aprender a evaluar:\n\n<list>Si el texto <bold>cita fuentes confiables</bold>.</list><list>Si presenta <bold>hechos verificables</bold> y no solo opiniones.</list><list>Si respeta la información original sin alterarla para hacerla más atractiva.</list>',
       
         example: {
           type: 'list',
@@ -353,36 +353,42 @@ export const module3: readonly Unit[] = [
       {
         id: '4.1',
         title: 'Selección de información clave en un texto científico',
-        text: 'El primer paso para adaptar un texto científico es identificar las ideas principales y más relevantes. Esto implica leer con atención para distinguir entre los detalles técnicos que pueden omitirse y la información esencial que debe conservarse. El objetivo es conservar el núcleo del mensaje sin abrumar al lector con datos innecesarios o demasiado especializados.\n\nPara seleccionar correctamente esta información, puedes hacerte preguntas como:\n\n<list>¿Qué se investigó o qué problema se planteó?\n<list>¿Qué resultados o conclusiones se obtuvieron?\n<list>¿Qué importancia tiene este hallazgo para la vida cotidiana o para un público no especializado?\n\nNo se trata de “recortar” contenido arbitrariamente, sino de identificar lo que aporta valor comunicativo al lector común. La selección cuidadosa permite enfocar la adaptación en lo esencial y evitar que el texto se vuelva denso o inaccesible.',
+        text: 'El primer paso para adaptar un texto científico es identificar <bold>las ideas principales y más relevantes</bold>. Esto implica leer con atención para distinguir entre los detalles técnicos que pueden omitirse y la información esencial que debe conservarse. El objetivo es conservar el núcleo del mensaje sin abrumar al lector con datos innecesarios o demasiado especializados.\n\nPara seleccionar correctamente esta información, puedes hacerte preguntas como:\n\n<list>¿Qué se investigó o qué problema se planteó?</list><list>¿Qué resultados o conclusiones se obtuvieron?</list><list>¿Qué importancia tiene este hallazgo para la vida cotidiana o para un público no especializado?</list>\n\nNo se trata de “recortar” contenido arbitrariamente, sino de identificar <bold>lo que aporta valor comunicativo al lector común</bold>. La selección cuidadosa permite enfocar la adaptación en lo esencial y evitar que el texto se vuelva denso o inaccesible.',
       
         example: {
           type: 'list',
-          textStart: 'Texto científico: "Se evaluó la eficacia de un compuesto experimental en la inhibición de la enzima COX-2, relacionada con procesos inflamatorios."\n\nInformación clave:',
-          content: ['Se probó una sustancia para ver si ayuda a reducir la inflamación.'],
+          textStart: '',
+          content: [
+            'Texto científico: "Se evaluó la eficacia de un compuesto experimental en la inhibición de la enzima COX-2, relacionada con procesos inflamatorios."',
+            'Información clave: Se probó una sustancia para ver si ayuda a reducir la inflamación.'],
           textEnd: 'Este ejemplo muestra cómo se puede extraer lo esencial del texto científico sin necesidad de mantener términos especializados o explicaciones demasiado técnicas.'
         }
       },
       {
         id: '4.2',
         title: 'Uso de lenguaje sencillo y directo',
-        text: 'Una vez seleccionada la información más importante, es necesario expresarla de forma clara. El lenguaje popular debe ser comprensible para personas sin conocimientos especializados, por lo que se recomienda:\n\n<list>Usar oraciones más cortas y directas.\n<list>Sustituir palabras complejas por sinónimos más conocidos.\n<list>Evitar el uso excesivo de pasivas y estructuras complicadas.\n<list>Usar un tono natural y cercano, como si estuvieras explicándoselo a alguien que te pregunta.',
+        text: 'Una vez seleccionada la información más importante, es necesario expresarla de forma clara. El lenguaje popular debe ser <bold>comprensible para personas sin conocimientos especializados</bold>, por lo que se recomienda:\n\n<list>Usar oraciones más cortas y directas.</list><list>Sustituir palabras complejas por sinónimos más conocidos.</list><list>Evitar el uso excesivo de pasivas y estructuras complicadas.</list><list>Usar un tono natural y cercano, como si estuvieras explicándoselo a alguien que te pregunta.</list>',
       
         example: {
           type: 'list',
-          textStart: 'Original: "La exposición prolongada a contaminantes atmosféricos incrementa el riesgo de padecer enfermedades respiratorias crónicas."\n\nAdaptado:',
-          content: ['"Respirar aire contaminado por mucho tiempo puede causar enfermedades en los pulmones."'],
+          textStart: '',
+          content: ['Original: "La exposición prolongada a contaminantes atmosféricos incrementa el riesgo de padecer enfermedades respiratorias crónicas."\n\nAdaptado:', 
+          'Adapatado:"Respirar aire contaminado por mucho tiempo puede causar enfermedades en los pulmones."'],
           textEnd: 'Ambas versiones dicen lo mismo, pero la segunda es mucho más accesible para el público general gracias a su simplicidad y estilo directo.'
         }
       },
       {
         id: '4.3',
         title: 'Eliminación de tecnicismos o explicación de términos complejos',
-        text: 'Los textos científicos suelen incluir vocabulario técnico especializado, conocido como tecnicismos. En la adaptación a un texto popular, es importante decidir si estos términos deben:\n\n<list>Ser eliminados y reemplazados por palabras comunes, o\n<list>Ser explicados brevemente dentro del mismo texto, si su uso es necesario para comprender el contenido.\n\nEsto permite al lector aprender algo nuevo sin sentirse confundido o excluido del tema.',
+        text: 'Los textos científicos suelen incluir vocabulario técnico especializado, conocido como <bold>tecnicismos</bold>. En la adaptación a un texto popular, es importante decidir si estos términos deben:\n\n<list>Ser eliminados y reemplazados por palabras comunes, o</list><list>Ser explicados brevemente dentro del mismo texto, si su uso es necesario para comprender el contenido.</list>\nEsto permite al lector aprender algo nuevo sin sentirse confundido o excluido del tema.',
       
         example: {
-          type: 'text',
-          textStart: 'Técnico: "La glucólisis es un proceso metabólico que convierte la glucosa en energía."\n\nAdaptado:',
-          content: '“La glucólisis, que es la forma en que el cuerpo obtiene energía del azúcar, ocurre dentro de nuestras células.”',
+          type: 'list',
+          textStart: '',
+          content: [
+            'Técnico: "La glucólisis es un proceso metabólico que convierte la glucosa en energía."',
+            'Adaptado: “La glucólisis, que es la forma en que el cuerpo obtiene energía del azúcar, ocurre dentro de nuestras células.”'
+          ],
           textEnd: 'En este caso, se conserva el término técnico pero se explica de inmediato, facilitando la comprensión sin perder precisión.'
         },
       
@@ -405,7 +411,7 @@ export const module3: readonly Unit[] = [
       {
         id: '4.4',
         title: 'Uso de ejemplos, analogías y comparaciones',
-        text: 'Una herramienta fundamental en los textos populares es el uso de ejemplos concretos y analogías. Estos recursos permiten traducir ideas abstractas o complejas a situaciones que el lector pueda visualizar o relacionar con su vida diaria.\n\n<list>Un ejemplo permite ilustrar un concepto con un caso real o hipotético.\n<list>Una analogía compara el concepto con algo más conocido para explicar cómo funciona.',
+        text: 'Una herramienta fundamental en los textos populares es el uso de <bold>ejemplos concretos y analogías</bold>. Estos recursos permiten traducir ideas abstractas o complejas a situaciones que el lector pueda visualizar o relacionar con su vida diaria.\n\n<list>Un ejemplo permite ilustrar un concepto con un caso real o hipotético.,</list><list>Una analogía compara el concepto con algo más conocido para explicar cómo funciona.</list>',
       
         example: {
           type: 'text',

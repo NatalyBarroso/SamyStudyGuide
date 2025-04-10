@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import StyledText from '../common/StyledText'
 
 interface Question {
   question: string
@@ -28,7 +29,9 @@ const ActivityMultipleChoice = ({ title, instructions, content }: ActivityMultip
   return (
     <div className="mt-8">
       <h3 className="text-lg font-bold mb-2 font-courier-prime">{title}</h3>
-      <p className="mb-4">{instructions}</p>
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
 
       <div className="flex flex-col gap-6">
         {content.map((item, index) => {
@@ -38,7 +41,7 @@ const ActivityMultipleChoice = ({ title, instructions, content }: ActivityMultip
           return (
             <div key={index} className="border border-[#4C585B] rounded-sm p-4 shadow-sm bg-[#f2f5f6]">
               <p className="font-semibold mb-2">
-                {index + 1}. {item.question}
+                {item.question}
               </p>
               <ul className="flex flex-col gap-2">
                 {item.options.map((option, optIdx) => (

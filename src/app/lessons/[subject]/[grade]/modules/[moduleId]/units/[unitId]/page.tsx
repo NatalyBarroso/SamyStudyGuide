@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import type { Unit } from "@/core/domain/entities/Unit";
 import { use, useEffect, useState } from "react";
+import StyledText from "@/ui/components/common/StyledText";
 
 interface Props {
   params: Promise<{
@@ -39,14 +40,13 @@ export default function UnitPage({ params }: Props) {
       <Header />
 
       {/* Titulo de la unidad */}
-      <div className="flex flex-col items-center justify-start min-h-screen px-4 sm:px-8 md:px-12 lg:px-16 py-6 sm:py-8 text-base sm:text-lg">
-        <div className="flex flex-col justify-start w-full">
+      <div className="flex flex-col justify-start min-h-screen px-4 sm:px-8 md:px-12 lg:px-16 py-6 sm:py-8 text-base sm:text-lg">
+        <div className="w-full">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 font-[family-name:var(--font-courier-prime)]">
             {currentUnit?.title}
           </h1>
+          <hr className="w-full border-t-2 sm:border-t-4 border-black my-2" />
         </div>
-
-        <hr className="w-full border-t-2 sm:border-t-4 border-black mx-2 sm:mx-4 md:mx-10 my-4" />
 
         <div className="flex flex-row justify-end items-center w-full mb-4">
           <p className="text-xs sm:text-sm font-bold font-[family-name:var(--font-courier-prime)]">
@@ -58,9 +58,9 @@ export default function UnitPage({ params }: Props) {
           <h2 className="text-base sm:text-lg font-bold mt-8 mb-2 font-[family-name:var(--font-courier-prime)]">
             INTRODUCCIÓN
           </h2>
-          {currentUnit?.introduction.split("\n").map((line, idx) => (
-            <p key={idx} className="mb-2">{line}</p>
-          ))}
+          {currentUnit?.introduction && (
+            <StyledText text={currentUnit.introduction} />
+          )}
 
           {/* Temas clave de la unidad */}
           <h2 className="mt-8 text-base sm:text-lg font-[family-name:var(--font-courier-prime)] font-bold">
@@ -85,7 +85,7 @@ export default function UnitPage({ params }: Props) {
         {currentUnit?.themes && (
           <div className="flex flex-col gap-6 mt-4">
             {currentUnit.themes.map((theme, index) => (
-              <div key={index}>
+              <div key={index} className="w-full">
                 <ThemeCard
                   title={theme.title}
                   text={theme.text}

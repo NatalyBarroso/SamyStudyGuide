@@ -16,7 +16,7 @@ export const module2: readonly Unit[] = [
       {
         id: "1.1",
         title: "Definición de reportaje",
-        text: "El reportaje es un texto periodístico que investiga y expone de forma profunda un tema de interés público. A diferencia de la noticia, no solo informa, sino que también explica, analiza y contextualiza. Puede abordar sucesos actuales, personajes relevantes, problemas sociales o culturales, entre otros temas.\nSe caracteriza por ofrecer una mirada amplia, detallada y bien documentada, con información obtenida de diversas fuentes. Combina el rigor informativo con recursos narrativos que captan el interés del lector.\n\n<subheading>Características principales:\n<list>Investiga y profundiza en un tema más allá de los hechos inmediatos.\n<list>Puede incluir entrevistas, testimonios y datos complementarios.\n<list>Se estructura en una narrativa más extensa y detallada.\n<list>Utiliza un lenguaje claro y objetivo, sin opiniones personales del autor.",
+        text: "El reportaje es un texto periodístico que investiga y expone de forma profunda un tema de interés público. A diferencia de la noticia, no solo informa, sino que también explica, analiza y contextualiza. Puede abordar sucesos actuales, personajes relevantes, problemas sociales o culturales, entre otros temas.\n\nSe caracteriza por ofrecer una mirada amplia, detallada y bien documentada, con información obtenida de diversas fuentes. Combina el rigor informativo con recursos narrativos que captan el interés del lector.\n\n<subheading>Características principales:</subheading>\n<list>Investiga y profundiza en un tema más allá de los hechos inmediatos.</list><list>Puede incluir entrevistas, testimonios y datos complementarios.</list><list>Se estructura en una narrativa más extensa y detallada.</list><list>Utiliza un lenguaje claro y objetivo, sin opiniones personales del autor.</list>",
 
         example: {
           type: "text",
@@ -36,7 +36,7 @@ export const module2: readonly Unit[] = [
       {
         id: "1.2",
         title: "Diferencia entre una noticia y un reportaje",
-        text: "Noticia: informa de manera breve, inmediata y objetiva sobre un hecho reciente. Se limita a responder las preguntas básicas: ¿qué?, ¿quién?, ¿cuándo?, ¿dónde?, ¿cómo? y ¿por qué?.\n\nReportaje: parte de un hecho pero lo amplía, lo investiga y lo contextualiza. Incluye entrevistas, descripciones, antecedentes y consecuencias. Se permite un tratamiento más narrativo y profundo.\n\n<subheading>Para ilustrar esta diferencia:\nUna noticia sobre una manifestación puede decir: 'Miles protestan en la capital contra la reforma laboral.'\nEn cambio, un reportaje podría incluir entrevistas con manifestantes, antecedentes de la reforma, análisis de expertos y posibles escenarios futuros.",
+        text: "<bold>Noticia:</bold> informa de manera breve, inmediata y objetiva sobre un hecho reciente. Se limita a responder las preguntas básicas: ¿qué?, ¿quién?, ¿cuándo?, ¿dónde?, ¿cómo? y ¿por qué?.\n\n<bold>Reportaje:</bold> parte de un hecho pero lo amplía, lo investiga y lo contextualiza. Incluye entrevistas, descripciones, antecedentes y consecuencias. Se permite un tratamiento más narrativo y profundo.\n\n<subheading>Para ilustrar esta diferencia:</subheading>\nUna noticia sobre una manifestación puede decir: 'Miles protestan en la capital contra la reforma laboral.'\nEn cambio, un reportaje podría incluir entrevistas con manifestantes, antecedentes de la reforma, análisis de expertos y posibles escenarios futuros.",
 
         example: {
           type: "table",
@@ -69,7 +69,7 @@ export const module2: readonly Unit[] = [
       {
         id: "1.3",
         title: "Estructura de un reportaje",
-        text: "Un reportaje suele organizarse en tres partes:\n\n<subheading>a) Introducción\nBusca captar la atención del lector. Puede iniciar con una anécdota, una descripción impactante, una cita o una pregunta. Presenta el tema principal y da una idea del enfoque que tendrá el texto.\n\n<subheading>b) Desarrollo\nEs la parte central y más extensa. Aquí se expone la información detallada, se introducen las fuentes, testimonios y datos. Se analizan causas y consecuencias, y se aporta contexto.\n\n<subheading>c) Conclusión\nCierra el texto reforzando el mensaje central. Puede ofrecer una reflexión, una llamada a la acción o una imagen que deje huella en el lector.",
+        text: "Un reportaje suele organizarse en tres partes:\n\n<subheading>a) Introducción</subheading>\nBusca captar la atención del lector. Puede iniciar con una anécdota, una descripción impactante, una cita o una pregunta. Presenta el tema principal y da una idea del enfoque que tendrá el texto.\n\n<subheading>b) Desarrollo</subheading>\nEs la parte central y más extensa. Aquí se expone la información detallada, se introducen las fuentes, testimonios y datos. Se analizan causas y consecuencias, y se aporta contexto.\n\n<subheading>c) Conclusión</subheading>\nCierra el texto reforzando el mensaje central. Puede ofrecer una reflexión, una llamada a la acción o una imagen que deje huella en el lector.",
 
         example: {
           type: "list",
@@ -98,7 +98,7 @@ export const module2: readonly Unit[] = [
       {
         id: "1.4",
         title: "Lenguaje en el reportaje: claro, formal y directo",
-        text: "El lenguaje en el reportaje debe ser claro, evitando ambigüedades o tecnicismos innecesarios; formal, cuidando la redacción y el vocabulario; y directo, presentando las ideas de forma precisa. Aunque puede usar recursos literarios, no pierde su base informativa.\n\nSe evitan juicios personales o subjetivos, privilegiando el uso de datos y testimonios que hablen por sí mismos.",
+        text: "El lenguaje en el reportaje debe ser claro, evitando ambigüedades o tecnicismos innecesarios; <bold>formal</bold>, cuidando la redacción y el vocabulario; y <bold>directo</bold>, presentando las ideas de forma precisa. Aunque puede usar recursos literarios, no pierde su base informativa.\n\nSe evitan juicios personales o subjetivos, privilegiando el uso de datos y testimonios que hablen por sí mismos.",
 
         example: {
           type: "list",
@@ -141,7 +141,7 @@ export const module2: readonly Unit[] = [
       {
         id: "2.1",
         title: "Diferencia entre hechos y opiniones",
-        text: "Un paso fundamental para interpretar un reportaje es distinguir claramente entre hechos y opiniones:\n<list>Hechos: son afirmaciones que pueden verificarse como verdaderas o falsas mediante evidencia. No dependen de puntos de vista personales.\n<list>Opiniones: son juicios, creencias o valoraciones personales. No pueden comprobarse de forma objetiva.",
+        text: "Un paso fundamental para interpretar un reportaje es distinguir claramente entre hechos y opiniones:\n<list><bold>Hechos:</bold> son afirmaciones que pueden verificarse como verdaderas o falsas mediante evidencia. No dependen de puntos de vista personales.</list><list><bold>Opiniones:</bold> son juicios, creencias o valoraciones personales. No pueden comprobarse de forma objetiva.</list>",
 
         example: {
           type: "list",

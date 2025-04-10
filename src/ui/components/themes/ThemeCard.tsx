@@ -13,7 +13,7 @@ interface ThemeCardProps {
 
 const ThemeCard = ({ title, text, example, activity, note }: ThemeCardProps) => {
   return (
-    <div className="text-base sm:text-lg w-full font-[family-name:var(--font-cutive-mono)]">
+    <div className="text-base sm:text-lg w-full font-[family-name:var(--font-cutive-mono)] flex flex-col items-start">
       <h2 className="lg:text-xl font-bold mt-8 mb-2 font-[family-name:var(--font-courier-prime)]">{title}</h2>
       <ThemeContent text={text} note={note} example={example} activity={activity} />
     </div>

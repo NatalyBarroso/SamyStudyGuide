@@ -30,7 +30,7 @@ export const module4: readonly Unit[] = [
       {
         id: '1.1',
         title: 'Tipos de respuestas en un cuestionario',
-        text: 'En cualquier cuestionario, el tipo de respuesta esperada influye directamente en la forma de analizar los datos recolectados. Existen dos grandes grupos:\n\n<list>Preguntas cerradas: El encuestado elige entre un conjunto limitado de respuestas.\n<list>Preguntas abiertas: El encuestado responde con sus propias palabras, sin opciones predefinidas.',
+        text: 'En cualquier cuestionario, el tipo de respuesta esperada influye directamente en la forma de analizar los datos recolectados. Existen dos grandes grupos:\n\n<list><bold>Preguntas cerradas:</bold> El encuestado elige entre un conjunto limitado de respuestas.</list><list><bold>Preguntas abiertas:</bold> El encuestado responde con sus propias palabras, sin opciones predefinidas.</list>',
         note: '<bold>Punto importante:</bold> Las preguntas cerradas son ideales para obtener datos rápidos y cuantificables. Las abiertas, para explorar ideas, opiniones o experiencias con mayor profundidad.'
 
       },
@@ -46,7 +46,7 @@ export const module4: readonly Unit[] = [
             text: "El encuestado debe elegir una (o varias) opciones entre alternativas prediseñadas.",
             example: {
               type: "list",
-              textStart: "Ejemplo: ¿Cuál de los siguientes medios utilizas más para informarte?",
+              textStart: "<bold>Ejemplo:</bold> ¿Cuál de los siguientes medios utilizas más para informarte?",
               content: [
                 "a) Redes sociales",
                 "b) Periódicos digitales",
@@ -87,7 +87,7 @@ export const module4: readonly Unit[] = [
           {
             id: '1.2.3',
             title: 'Escalas de valoración (Likert)',
-            text: 'Permiten medir el grado de acuerdo, satisfacción, frecuencia, etc.\n\n<subheading>Ejemplo: Estoy satisfecho con el material de estudio.\n<list>Totalmente en desacuerdo\n<list>En desacuerdo\n<list>Ni de acuerdo ni en desacuerdo\n<list>De acuerdo\n<list>Totalmente de acuerdo\n\nEstas escalas aportan mayor profundidad que un "sí o no", sin requerir una respuesta abierta. Son muy utilizadas en cuestionarios de opinión.',
+            text: 'Permiten medir el grado de acuerdo, satisfacción, frecuencia, etc.\n\n<subheading><bold>Ejemplo:</bold> Estoy satisfecho con el material de estudio.</subheading>\n<list>Totalmente en desacuerdo</list><list>En desacuerdo</list><list>Ni de acuerdo ni en desacuerdo</list><list>De acuerdo</list><list>Totalmente de acuerdo</list>\nEstas escalas aportan mayor profundidad que un "sí o no", sin requerir una respuesta abierta. Son muy utilizadas en cuestionarios de opinión.',
             example: {
               type: 'table',
               textStart: 'Ventajas de la escala Likert',
@@ -105,7 +105,7 @@ export const module4: readonly Unit[] = [
             text: 'Evaluación directa de un enunciado con dos opciones posibles.',
             example: {
               type: 'list',
-              textStart: 'Ejemplo: El agua hierve a 90ºC.',
+              textStart: '<bold>Ejemplo:</bold> El agua hierve a 90ºC.',
               content: [
                 'Verdadero',
                 'Falso'
@@ -145,7 +145,7 @@ export const module4: readonly Unit[] = [
             text: '',
             example: {
               type: 'text',
-              textStart: 'Ejemplo:',
+              textStart: '<bold>Ejemplo:</bold>',
               content: '¿Qué aspectos mejorarías del curso actual?',
               textEnd: 'El encuestado puede abordar libremente el tema, sin restricciones. Esto permite descubrir ideas que no se habían previsto al diseñar el cuestionario.'
             },
@@ -157,7 +157,7 @@ export const module4: readonly Unit[] = [
             text: '',
             example: {
               type: 'text',
-              textStart: 'Ejemplo:',
+              textStart: '<bold>Ejemplo:</bold>',
               content: 'En tu opinión, ¿cuál es el papel de la tecnología en la educación actual?',
               textEnd: 'Este tipo de preguntas promueve la argumentación, lo que es especialmente valioso en contextos formativos o de investigación cualitativa.'
             },
@@ -214,7 +214,7 @@ export const module4: readonly Unit[] = [
       {
         id: '2.1',
         title: 'Propósito del cuestionario',
-        text: 'Antes de escribir cualquier pregunta, es fundamental definir cuál es el objetivo del cuestionario. Esto guiará el tipo de preguntas que se deben utilizar y el lenguaje que se empleará.\n\n<subheading>Principales propósitos:\n<list>Recopilar información: Se buscan datos específicos sobre personas, hechos o situaciones.\n<list>Medir conocimientos: Se evalúa lo que el encuestado sabe sobre un tema determinado.\n<list>Evaluar opiniones o actitudes: Se exploran percepciones, creencias o valoraciones personales.',
+        text: 'Antes de escribir cualquier pregunta, es fundamental definir cuál es el objetivo del cuestionario. Esto guiará el tipo de preguntas que se deben utilizar y el lenguaje que se empleará.\n\n<subheading>Principales propósitos:</subheading>\n<list><bold>Recopilar información:</bold> Se buscan datos específicos sobre personas, hechos o situaciones.</list><list><bold>Medir conocimientos:</bold> Se evalúa lo que el encuestado sabe sobre un tema determinado.</list><list><bold>Evaluar opiniones o actitudes:</bold> Se exploran percepciones, creencias o valoraciones personales.</list>',
       
         example: {
           type: 'list',
@@ -255,12 +255,14 @@ export const module4: readonly Unit[] = [
       {
         id: '2.2',
         title: 'Uso de lenguaje claro y directo',
-        text: 'Un buen cuestionario se caracteriza por su claridad. Las preguntas deben ser fáciles de entender para evitar confusiones o malas interpretaciones.\n\nVeamos un ejemplo de cómo una pregunta confusa puede volverse clara con solo ajustar el lenguaje.',
+        text: 'Un buen cuestionario se caracteriza por su claridad. Las preguntas deben ser fáciles de entender para evitar confusiones o malas interpretaciones.',
       
         example: {
           type: 'list',
-          textStart: 'Pregunta poco clara: ¿Cuál es tu percepción sobre los aspectos múltiples de la metodología utilizada?\n\n*(Lenguaje abstracto y difícil de interpretar.)*\n\nPregunta clara:',
-          content: ['¿Te parecieron claros los pasos seguidos en la metodología del curso?\n\n*(Lenguaje más directo y concreto.)*'],
+          textStart: 'Veamos un ejemplo de cómo una pregunta confusa puede volverse clara con solo ajustar el lenguaje.',
+          content: [
+            'Pregunta poco clara: ¿Cuál es tu percepción sobre los aspectos múltiples de la metodología utilizada?\n\n*(Lenguaje abstracto y difícil de interpretar.)',
+            'Pregunta clara: ¿Te parecieron claros los pasos seguidos en la metodología del curso?\n\n*(Lenguaje más directo y concreto.)*'],
           textEnd: 'La primera pregunta utiliza términos vagos y técnicos, mientras que la segunda es más específica y comprensible para cualquier estudiante.'
         },
       
@@ -271,7 +273,7 @@ export const module4: readonly Unit[] = [
           content: '“¿Consideras que, en cierta medida, el proceso de enseñanza-aprendizaje se ve afectado por las condiciones tecnológicas y contextuales en las que se desarrolla la actividad educativa?”'
         },
       
-        note: '<bold>Recomendaciones prácticas:</bold>\n\n- Usa palabras comunes y accesibles.\n- Evita tecnicismos innecesarios.\n- No incluyas doble negación o frases complicadas.'
+        note: '<bold>Recomendaciones prácticas:</bold>\n<list>Usa palabras comunes y accesibles.</list><list>Evita tecnicismos innecesarios.</list><list>No incluyas doble negación o frases complicadas.</list>'
       },
       {
         id: '2.3',
@@ -280,8 +282,10 @@ export const module4: readonly Unit[] = [
       
         example: {
           type: 'list',
-          textStart: 'Con sesgo: ¿No te parece que el nuevo sistema educativo es mejor que el anterior?\n\nObjetiva:',
-          content: ['¿Cómo compararías el nuevo sistema educativo con el anterior?'],
+          textStart: '',
+          content: [
+            'Con sesgo: ¿No te parece que el nuevo sistema educativo es mejor que el anterior?',
+            'Objetiva: ¿Cómo compararías el nuevo sistema educativo con el anterior?'],
           textEnd: 'La primera pregunta induce una respuesta afirmativa al usar “mejor”, mientras que la segunda invita al encuestado a dar su opinión sin condicionamientos.'
         },
       
@@ -301,19 +305,19 @@ export const module4: readonly Unit[] = [
             }
           ]
         },
-        note: 'Consejo: Evita adjetivos que valoren, como "excelente", "terrible", "eficaz", etc.'
+        note: '<bold>Consejo:</bold> Evita adjetivos que valoren, como "excelente", "terrible", "eficaz", etc.'
       },
       {
         id: '2.4',
         title: 'Evitar preguntas dobles o confusas',
-        text: 'Una pregunta doble es aquella que formula dos preguntas en una sola. Esto dificulta la respuesta clara y precisa.\n\nEl siguiente ejemplo muestra cómo una pregunta doble puede dividirse para mayor claridad.',
+        text: 'Una <bold>pregunta doble</bold> es aquella que formula dos preguntas en una sola. Esto dificulta la respuesta clara y precisa.\n\nEl siguiente ejemplo muestra cómo una pregunta doble puede dividirse para mayor claridad.',
       
         example: {
           type: 'list',
-          textStart: 'Incorrecta: ¿Te gusta la plataforma y la metodología del curso?\n\nCorregida:',
+          textStart: '',
           content: [
-            '¿Te gusta la plataforma del curso?',
-            '¿Te gusta la metodología del curso?'
+            'Incorrecta: ¿Te gusta la plataforma y la metodología del curso?',
+            'Corregida: ¿Te gusta la plataforma del curso? ¿Te gusta la metodología del curso?',
           ],
           textEnd: 'La versión incorrecta combina dos temas, lo que puede confundir al encuestado si tiene opiniones distintas sobre cada uno. Separarlas mejora la claridad.'
         },
@@ -335,12 +339,12 @@ export const module4: readonly Unit[] = [
           ]
         },
       
-        note: '<bold>Recomendaciones:</bold>\n\n- Divide las preguntas si tocan temas distintos.\n- Revisa que solo haya un verbo principal por pregunta.'
+        note: '<bold>Recomendaciones:</bold>\n<list>Divide las preguntas si tocan temas distintos.</list><list>Revisa que solo haya un verbo principal por pregunta.</list>'
       },
       {
         id: '2.5',
         title: 'Estructura de una pregunta bien formulada',
-        text: 'Una buena pregunta debe tener:\n\n<list>Claridad en el lenguaje\n<list>Un solo enfoque temático\n<list>Objetividad\n<list>Adecuación al propósito del cuestionario',
+        text: 'Una buena pregunta debe tener:\n\n<list>Claridad en el lenguaje</list><list>Un solo enfoque temático</list><list>Objetividad</list><list>Adecuación al propósito del cuestionario</list>',
       
         example: {
           type: 'text',
@@ -396,7 +400,7 @@ export const module4: readonly Unit[] = [
       {
         id: '3.1',
         title: 'Orden lógico de las preguntas',
-        text: 'El orden en que se presentan las preguntas influye directamente en la disposición del encuestado para responder. Generalmente, se recomienda avanzar de lo general a lo específico, permitiendo al usuario familiarizarse con el tema antes de responder detalles más complejos.',
+        text: 'El orden en que se presentan las preguntas influye directamente en la disposición del encuestado para responder. Generalmente, se recomienda avanzar <bold>de lo general a lo específico</bold>, permitiendo al usuario familiarizarse con el tema antes de responder detalles más complejos.',
       
         example: {
           type: 'list',
@@ -445,7 +449,7 @@ export const module4: readonly Unit[] = [
         example: {
           type: 'text',
           textStart: 'Ejemplo de instrucción:',
-          content: '“Selecciona una sola opción en cada pregunta.”',
+          content: 'Selecciona una sola opción en cada pregunta.',
           textEnd: 'Este tipo de indicaciones ayuda a estandarizar las respuestas y mejorar la calidad de los datos obtenidos.'
         },
       
@@ -473,7 +477,7 @@ export const module4: readonly Unit[] = [
       
         example: {
           type: 'text',
-          textStart: 'Ejemplo:',
+          textStart: '<bold>Ejemplo:</bold>',
           content: '“Este cuestionario tomará aproximadamente 10 minutos.”',
           textEnd: 'Informar al encuestado sobre la duración estimada le ayuda a organizar su tiempo y reduce la ansiedad durante la respuesta.'
         },
@@ -532,7 +536,7 @@ export const module4: readonly Unit[] = [
       
         example: {
           type: 'text',
-          textStart: 'Ejemplo:',
+          textStart: '<bold>Ejemplo:</bold>',
           content: '“En una escala de Likert, el 60% de los encuestados respondió ‘De acuerdo’ a la afirmación: ‘Me siento motivado en clase’.”',
           textEnd: 'Este tipo de análisis permite identificar qué tan frecuentes son ciertas respuestas y compararlas entre grupos.'
         },
@@ -544,23 +548,23 @@ export const module4: readonly Unit[] = [
           content: '¿Qué podrías concluir a partir de esta información?'
         },
       
-        note: '<bold>Herramientas útiles:</bold>\n\n- Tablas de frecuencia\n- Gráficos de barras o pastel\n- Promedios o porcentajes'
+        note: '<bold>Herramientas útiles:</bold>\n<list>Tablas de frecuencia</list><list>Gráficos de barras o pastel</list><list>Promedios o porcentajes</list>'
       },  
       {
         id: '4.2',
         title: 'Interpretación de respuestas abiertas (análisis cualitativo)',
-        text: 'Las respuestas abiertas requieren una lectura e interpretación más profunda. En lugar de contar opciones, se busca comprender el contenido y significado de lo que expresa el encuestado.',
+        text: 'Las respuestas abiertas requieren una lectura e interpretación más profunda. En lugar de contar opciones, se busca <bold>comprender el contenido y significado</bold> de lo que expresa el encuestado.',
       
         example: {
           type: 'text',
-          textStart: 'Ejemplo:',
+          textStart: '<bold>Ejemplo:</bold>',
           content: '“Siento que las clases virtuales me aíslan de mis compañeros y eso afecta mi motivación.”',
           textEnd: 'Esta respuesta no se puede cuantificar directamente, pero ofrece información rica que permite entender emociones, percepciones o propuestas.'
         },
       
         activity: undefined,
       
-        note: '<bold>Estrategias recomendadas:</bold>\n\n- Lectura repetida y detallada\n- Subrayado de ideas clave\n- Categorización de respuestas por temas o sentimientos\n\nConsejo práctico: Puedes usar tablas para agrupar respuestas similares bajo categorías como “críticas”, “sugerencias” o “elogios”.'
+        note: '<bold>Estrategias recomendadas:</bold>\n<list>Lectura repetida y detallada</list><list>Subrayado de ideas clave</list><list>Categorización de respuestas por temas o sentimientos</list>\n\n<bold>Consejo práctico:</bold> Puedes usar tablas para agrupar respuestas similares bajo categorías como “críticas”, “sugerencias” o “elogios”.'
       },
       {
         id: '4.3',
@@ -569,7 +573,7 @@ export const module4: readonly Unit[] = [
       
         example: {
           type: 'text',
-          textStart: 'Ejemplo:',
+          textStart: '<bold>Ejemplo:</bold>',
           content: '“Si muchas personas mencionan que el tiempo de clase es ‘muy corto’, aunque lo expresen de distintas formas, puede detectarse una tendencia general.”',
           textEnd: 'Identificar patrones ayuda a tomar decisiones informadas para mejorar procesos o herramientas.'
         },
@@ -584,11 +588,11 @@ export const module4: readonly Unit[] = [
       {
         id: '4.4',
         title: 'Evaluación de la efectividad de las preguntas',
-        text: 'No todas las preguntas funcionan igual de bien. Evaluar su efectividad permite mejorar la calidad del cuestionario.\n\n<subheading>Aspectos a evaluar:\n<list>¿La pregunta obtuvo respuestas completas y útiles?\n<list>¿Los encuestados la entendieron con claridad?\n<list>¿Las respuestas fueron variadas o repetitivas?',
+        text: 'No todas las preguntas funcionan igual de bien. Evaluar su efectividad permite mejorar la calidad del cuestionario.\n\n<subheading>Aspectos a evaluar:</subheading>\n<list>¿La pregunta obtuvo respuestas completas y útiles?</list><list>¿Los encuestados la entendieron con claridad?</list><list>¿Las respuestas fueron variadas o repetitivas?</list>',
       
         example: {
           type: 'text',
-          textStart: 'Ejemplo:',
+          textStart: '<bold>Ejemplo:</bold>',
           content: '“Una pregunta como: ¿Qué opinas de la educación? puede generar respuestas muy vagas. En cambio: ¿Qué aspectos mejorarías en tu experiencia educativa actual? es más específica y útil.”',
           textEnd: 'Las preguntas demasiado generales o ambiguas dificultan el análisis y deben ser reformuladas.'
         },
@@ -598,11 +602,11 @@ export const module4: readonly Unit[] = [
       {
         id: '4.5',
         title: 'Revisión y mejora del cuestionario en función de los resultados obtenidos',
-        text: 'Una vez interpretadas las respuestas, es recomendable ajustar el cuestionario para futuras aplicaciones. Este paso mejora la calidad del instrumento con base en la experiencia previa.',
+        text: 'Una vez interpretadas las respuestas, es recomendable <bold>ajustar el cuestionario</bold> para futuras aplicaciones. Este paso mejora la calidad del instrumento con base en la experiencia previa.',
       
         example: {
           type: 'text',
-          textStart: 'Ejemplo:',
+          textStart: '<bold>Ejemplo:</bold>',
           content: '“Si muchas personas no entendieron una escala de valoración, en la siguiente versión se puede incluir una instrucción más clara o cambiar el formato.”',
           textEnd: ''
         },
@@ -610,11 +614,11 @@ export const module4: readonly Unit[] = [
         activity: {
           type: 'input',
           title: 'Actividad: Mejora una pregunta',
-          instructions: 'Analiza esta pregunta y propón una versión más efectiva:\n\n“¿Te gusta aprender?”',
-          content: ''
+          instructions: 'Analiza esta pregunta y propón una versión más efectiva:',
+          content: '“¿Te gusta aprender?”'
         },
       
-        note: '<bold>Recomendaciones:</bold>\n\n- Elimina preguntas irrelevantes o que generaron confusión\n- Reformula las que no aportaron datos útiles\n- Agrega preguntas nuevas si faltó información importante'
+        note: '<bold>Recomendaciones:</bold>\n<list>Elimina preguntas irrelevantes o que generaron confusión</list><list>Reformula las que no aportaron datos útiles</list><list>Agrega preguntas nuevas si faltó información importante</list>'
       }                    
     ],
 

@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import StyledText from '../common/StyledText'
 
 interface MultiSelectQuestion {
   question: string
@@ -36,7 +37,9 @@ const ActivityMultipleSelect = ({ title, instructions, content }: ActivityMultip
   return (
     <div className="mt-8">
       <h3 className="text-lg font-bold mb-2 font-courier-prime">{title}</h3>
-      <p className="mb-4">{instructions}</p>
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
 
       <div className="flex flex-col gap-6">
         {content.map((item, index) => {
@@ -47,7 +50,7 @@ const ActivityMultipleSelect = ({ title, instructions, content }: ActivityMultip
 
           return (
             <div key={index} className="border rounded-md p-4 shadow-sm bg-white">
-              <p className="font-semibold mb-2">{index + 1}. {item.question}</p>
+              <p className="font-semibold mb-2">{item.question}</p>
               <ul className="flex flex-col gap-2">
                 {item.options.map((option, optIdx) => {
                   const isChecked = selected.includes(option)
@@ -94,7 +97,7 @@ const ActivityMultipleSelect = ({ title, instructions, content }: ActivityMultip
       <div className="mt-6 flex justify-end">
         <button
           onClick={() => setShowResults(true)}
-          className="px-4 py-2 bg-[var(--primary-color)] text-white rounded hover:bg-[var(--secondary-color)] transition-colors"
+          className="px-4 py-2 bg-[var(--primary-color)] text-white rounded hover:bg-[var(--secondary-color)] transition-colors cursor-pointer"
         >
           Revisar respuestas
         </button>

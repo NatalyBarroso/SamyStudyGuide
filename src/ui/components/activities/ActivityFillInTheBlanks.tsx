@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import StyledText from '../common/StyledText'
 
 interface FillInTheBlankItem {
   sentence: string // Ejemplo: "_______ de la Segunda Guerra Mundial, se establecieron acuerdos de paz."
@@ -28,7 +29,9 @@ const ActivityFillInTheBlanks = ({ title, instructions, content }: ActivityFillI
   return (
     <div className="mt-8">
       <h3 className="text-lg font-bold mb-2 font-courier-prime">{title}</h3>
-      <p className="mb-4">{instructions}</p>
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
 
       <div className="flex flex-col gap-6">
         {content.map((item, index) => {
@@ -63,7 +66,7 @@ const ActivityFillInTheBlanks = ({ title, instructions, content }: ActivityFillI
       <div className="mt-6 flex justify-end">
         <button
           onClick={() => setShowResults(true)}
-          className="px-4 py-2 bg-[var(--primary-color)] text-white rounded hover:bg-[var(--secondary-color)] transition-colors"
+          className="px-4 py-2 bg-[var(--primary-color)] text-white rounded hover:bg-[var(--secondary-color)] transition-colors cursor-pointer"
         >
           Revisar respuestas
         </button>

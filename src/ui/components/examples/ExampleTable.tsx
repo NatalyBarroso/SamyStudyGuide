@@ -1,3 +1,5 @@
+import StyledText from "../common/StyledText";
+
 interface ExampleTableProps {
   textStart: string;
   tableData: string[][];
@@ -7,7 +9,11 @@ interface ExampleTableProps {
 const ExampleTable = ({ textStart, tableData, textEnd }: ExampleTableProps) => {
   return (
     <div className="my-8 bg-[#c9cdce] border border-[#CBD5E1] rounded-sm p-4 shadow-sm">
-      <p className="mb-4">{textStart}</p>
+      {textStart && (
+        <div className="mb-2">
+          <StyledText text={textStart} />
+        </div>
+      )}
 
       <div className="overflow-x-auto rounded-md">
         <table className="table-auto w-full text-left border-collapse bg-white/70 rounded-md shadow-sm">
@@ -37,7 +43,11 @@ const ExampleTable = ({ textStart, tableData, textEnd }: ExampleTableProps) => {
         </table>
       </div>
 
-      <p className="mt-4">{textEnd}</p>
+      {textEnd && (
+        <div className="mt-2">
+          <StyledText text={textEnd} />
+        </div>
+      )}
     </div>
   )
 }

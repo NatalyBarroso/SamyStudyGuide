@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import StyledText from "@/ui/components/common/StyledText";
 
 interface ClassificationItem {
   text: string
@@ -30,12 +31,14 @@ const ActivityClassify = ({ title, instructions, options, content }: ActivityCla
   return (
     <div className="mt-8">
       <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-courier-prime)]">{title}</h3>
-      <p className="mb-4">{instructions}</p>
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
 
       <div className="flex flex-col gap-4">
         {content.map((item, index) => (
           <div key={index} className="border rounded-md p-4 bg-white shadow-sm">
-            <p className="mb-2 font-medium">{index + 1}. {item.text}</p>
+            <p className="mb-2 font-medium font-semibold text-[var(--secondary-color)] font-[family-name:var(--font-courier-prime)]">{item.text}</p>
             <div className="flex flex-wrap gap-4">
               {options.map(option => (
                 <label key={option} className="flex items-center gap-2 cursor-pointer">

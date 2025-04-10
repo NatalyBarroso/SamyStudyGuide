@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import StyledText from '../common/StyledText'
 
 interface DragItem {
   text: string
@@ -60,9 +61,9 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
   return (
     <div className="mt-8">
       <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-courier-prime)]">{title}</h3>
-      {instructions.split('\n').map((line, index) => (
-        <p key={index} className="mb-4">{line}</p>
-      ))}
+      <div className="my-4">
+        <StyledText text={instructions} />
+      </div>
 
       {/* Opciones disponibles */}
       <div className="mb-6">
@@ -123,7 +124,7 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
       <div className="flex justify-end">
         <button
           onClick={checkAnswers}
-          className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md transition-colors"
+          className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md transition-colors cursor-pointer"
         >
           Revisar respuestas
         </button>
