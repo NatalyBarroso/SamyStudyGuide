@@ -26,7 +26,7 @@ const ActivityInput = ({ title, instructions, content }: ActivityOpenProps) => {
         <textarea
           id="respuesta"
           rows={5}
-          className="w-full border border-gray-400 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+          className="w-full border border-gray-400 bg-gray-50 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
           placeholder="Escribe tu respuesta aquí..."
         />
       </div>

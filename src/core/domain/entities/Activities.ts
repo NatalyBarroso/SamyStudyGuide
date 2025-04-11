@@ -82,5 +82,12 @@ export type ActivityReWrite = {
   }[]
 }
 
+export type ActivityMultipleInputs = {
+  type: 'multiple-inputs'
+  title: string
+  instructions: string
+  content: string[]
+}
 
-export type Activity = ActivityInput | ActivityMultipleChoice | ActivityDragAnDrop | ActivityMultipleSelect | ActivityFillInTheBlanks | ActivityClassifyText | ActivityOrderText | ActivityReWrite
+
+export type Activity = ActivityInput | ActivityMultipleChoice | ActivityDragAnDrop | ActivityMultipleSelect | ActivityFillInTheBlanks | ActivityClassifyText | ActivityOrderText | ActivityReWrite | ActivityMultipleInputs

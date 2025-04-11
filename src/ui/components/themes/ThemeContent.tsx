@@ -13,6 +13,7 @@ import ActivityOrderText from '@/ui/components/activities/ActivityOrderText.tsx'
 import NoteCard from '@/ui/components/themes/NoteCard'
 import StyledText from "@/ui/components/common/StyledText";
 import ActivityReWrite from '../activities/ActivityReWrite'
+import ActivityMultipleInputs from '../activities/ActivityMultipleInputs'
 
 interface ThemeContentProps {
   text: string
@@ -68,6 +69,7 @@ const ThemeContent = ({ text, note, example, activity }: ThemeContentProps) => {
       case 'classify-text': return <ActivityClassifyText {...activity} />
       case 'order-text': return <ActivityOrderText {...activity} />
       case 're-write': return <ActivityReWrite {...activity} />
+      case 'multiple-inputs': return <ActivityMultipleInputs {...activity}/>
       default: return null
     }
   }
