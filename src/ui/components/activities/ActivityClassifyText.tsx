@@ -38,7 +38,7 @@ const ActivityClassify = ({ title, instructions, options, content }: ActivityCla
       <div className="flex flex-col gap-4">
         {content.map((item, index) => (
           <div key={index} className="border rounded-md p-4 bg-white shadow-sm">
-            <p className="mb-2 font-medium font-semibold text-[var(--secondary-color)] font-[family-name:var(--font-courier-prime)]">{item.text}</p>
+            <p className="mb-2 font-light text-black font-[family-name:var(--font-courier-prime)]">{item.text}</p>
             <div className="flex flex-wrap gap-4">
               {options.map(option => (
                 <label key={option} className="flex items-center gap-2 cursor-pointer">
