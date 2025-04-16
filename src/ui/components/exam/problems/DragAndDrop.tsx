@@ -1,30 +1,25 @@
-'use client'
-import { useState } from 'react'
-import StyledText from '../common/StyledText'
+import { useState } from "react"
 
 interface DragItem {
   text: string
   category: string
 }
 
-interface ActivityDragAndDropsProps {
-  title: string
+interface DragAndDropProps {
   instructions: string
-  content: {
-    categories: string[]
-    items: DragItem[]
-  }
+  categories: string[]
+  items: DragItem[]
 }
 
-const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndDropsProps) => {
+const DragAndDrop = ({ categories, items, instructions }: DragAndDropProps) => {
   const [draggingItem, setDraggingItem] = useState<DragItem | null>(null)
-  const [availableItems, setAvailableItems] = useState<DragItem[]>(content.items)
+  const [availableItems, setAvailableItems] = useState<DragItem[]>(items)
 
   const [answers, setAnswers] = useState<Record<string, DragItem[]>>(
-    content.categories.reduce((acc, cat) => ({ ...acc, [cat]: [] }), {} as Record<string, DragItem[]>)
+    categories.reduce((acc, cat) => ({ ...acc, [cat]: [] }), {} as Record<string, DragItem[]>)
   )
 
-  const [feedback, setFeedback] = useState<Record<string, boolean> | null>(null)
+  // const [feedback, setFeedback] = useState<Record<string, boolean> | null>(null)
 
   const handleDrop = (category: string) => {
     if (draggingItem) {
@@ -46,25 +41,11 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
     setAvailableItems(prev => [...prev, item])
   }
 
-  const checkAnswers = () => {
-    const result: Record<string, boolean> = {}
-
-    for (const category of content.categories) {
-      const correctItems = content.items.filter(i => i.category === category).map(i => i.text).sort()
-      const userItems = answers[category].map(i => i.text).sort()
-      result[category] = JSON.stringify(correctItems) === JSON.stringify(userItems)
-    }
-
-    setFeedback(result)
-  }
-
   return (
     <div className="mt-8">
-      <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-courier-prime)]">{title}</h3>
       <div className="my-4">
-        <StyledText text={instructions} />
+        <p className="font-semibold text-xl font-[family-name:var(--font-courier-prime)]">{instructions}</p>
       </div>
-
       {/* Opciones disponibles */}
       <div className="mb-6">
         <p className="font-semibold mb-2">Opciones:</p>
@@ -84,7 +65,7 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
 
       {/* Categorías */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-        {content.categories.map((category, index) => (
+        {categories.map((category, index) => (
           <div
             key={index}
             onDragOver={(e) => e.preventDefault()}
@@ -111,26 +92,16 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
               </ul>
             )}
 
-            {feedback && (
+            {/* {feedback && (
               <p className={`mt-2 text-sm font-semibold ${feedback[category] ? 'text-green-600' : 'text-red-600'}`}>
                 {feedback[category] ? '¡Correcto!' : 'Revisa esta categoría'}
               </p>
-            )}
+            )} */}
           </div>
         ))}
-      </div>
-
-      {/* Botón de revisión */}
-      <div className="flex justify-end">
-        <button
-          onClick={checkAnswers}
-          className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md transition-colors cursor-pointer"
-        >
-          Revisar respuestas
-        </button>
       </div>
     </div>
   )
 }
 
-export default ActivityDragAndDrops
+export default DragAndDrop

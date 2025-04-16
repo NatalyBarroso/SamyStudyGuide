@@ -12,20 +12,19 @@ interface ActivityMultipleChoiceProps {
   title: string
   instructions: string
   content: Question[]
-  showResults: boolean
 }
 
-const ActivityMultipleChoice = ({ title, instructions, content, showResults }: ActivityMultipleChoiceProps) => {
+const ActivityMultipleChoice = ({ title, instructions, content }: ActivityMultipleChoiceProps) => {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({})
-  // const [showResults, setShowResults] = useState(false)
+  const [showResults, setShowResults] = useState(false)
 
   const handleSelect = (questionIndex: number, option: string) => {
     setSelectedAnswers(prev => ({ ...prev, [questionIndex]: option }))
   }
 
-  // const handleCheckAnswers = () => {
-  //   setShowResults(true)
-  // }
+  const handleCheckAnswers = () => {
+    setShowResults(true)
+  }
 
   return (
     <div className="mt-8">
@@ -79,13 +78,12 @@ const ActivityMultipleChoice = ({ title, instructions, content, showResults }: A
 
       {/* Botón de verificación */}
       <div className="mt-6">
-        {showResults &&
-          <button
-            className="bg-[var(--primary-color)] text-white font-semibold py-2 px-4 rounded hover:bg-[var(--secondary-color)] transition-colors cursor-pointer"
-          >
-            Verificar respuestas
-          </button>
-        }
+        <button
+          onClick={handleCheckAnswers}
+          className="bg-[var(--primary-color)] text-white font-semibold py-2 px-4 rounded hover:bg-[var(--secondary-color)] transition-colors cursor-pointer"
+        >
+          Verificar respuestas
+        </button>
       </div>
     </div>
   )

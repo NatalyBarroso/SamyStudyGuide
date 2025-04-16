@@ -19,10 +19,9 @@ interface ActivityOrderTextProps {
   instructions: string
   content: OrderItem[]
   correctOrder: string[] // Orden correcto de los fragmentos (por id)
-  showResults: boolean
 }
 
-const ActivityOrderText = ({ title, instructions, content, correctOrder, showResults }: ActivityOrderTextProps) => {
+const ActivityOrderText = ({ title, instructions, content, correctOrder }: ActivityOrderTextProps) => {
   const [items, setItems] = useState<OrderItem[]>(content)
   const [feedback, setFeedback] = useState<string | null>(null)
 
@@ -66,14 +65,12 @@ const ActivityOrderText = ({ title, instructions, content, correctOrder, showRes
         </SortableContext>
       </DndContext>
 
-      {showResults &&
-        <button
-          onClick={checkAnswer}
-          className="mt-6 px-4 py-2 rounded bg-[var(--primary-color)] text-white font-semibold hover:bg-[var(--secondary-color)] transition cursor-pointer"
-        >
-          Revisar respuesta
-        </button>
-      }
+      <button
+        onClick={checkAnswer}
+        className="mt-6 px-4 py-2 rounded bg-[var(--primary-color)] text-white font-semibold hover:bg-[var(--secondary-color)] transition cursor-pointer"
+      >
+        Revisar respuesta
+      </button>
 
       {feedback && <p className="mt-4 font-semibold">{feedback}</p>}
     </div>

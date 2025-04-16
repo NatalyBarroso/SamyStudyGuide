@@ -12,12 +12,11 @@ interface ActivityClassifyProps {
   instructions: string
   options: string[]
   content: ClassificationItem[]
-  showResults: boolean
 }
 
-const ActivityClassify = ({ title, instructions, options, content, showResults }: ActivityClassifyProps) => {
+const ActivityClassify = ({ title, instructions, options, content }: ActivityClassifyProps) => {
   const [answers, setAnswers] = useState<(string | null)[]>(Array(content.length).fill(null))
-  // const [showResults, setShowResults] = useState(false)
+  const [showResults, setShowResults] = useState(false)
 
   const handleSelect = (index: number, value: string) => {
     const newAnswers = [...answers]
@@ -65,13 +64,12 @@ const ActivityClassify = ({ title, instructions, options, content, showResults }
         ))}
       </div>
 
-      {showResults &&
-        <button
-          className="mt-6 px-4 py-2 bg-[var(--primary-color)] text-white rounded hover:bg-[var(--secondary-color)] transition-colors duration-300 cursor-pointer"
-        >
-          Revisar respuestas
-        </button>
-      }
+      <button
+        className="mt-6 px-4 py-2 bg-[var(--primary-color)] text-white rounded hover:bg-[var(--secondary-color)] transition-colors duration-300 cursor-pointer"
+        onClick={() => setShowResults(true)}
+      >
+        Revisar respuestas
+      </button>
     </div>
   )
 }
