@@ -14,9 +14,10 @@ interface ActivityDragAndDropsProps {
     categories: string[]
     items: DragItem[]
   }
+  showResults: boolean
 }
 
-const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndDropsProps) => {
+const ActivityDragAndDrops = ({ title, instructions, content, showResults }: ActivityDragAndDropsProps) => {
   const [draggingItem, setDraggingItem] = useState<DragItem | null>(null)
   const [availableItems, setAvailableItems] = useState<DragItem[]>(content.items)
 
@@ -122,12 +123,14 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
 
       {/* Botón de revisión */}
       <div className="flex justify-end">
-        <button
-          onClick={checkAnswers}
-          className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md transition-colors cursor-pointer"
-        >
-          Revisar respuestas
-        </button>
+        {showResults &&
+          <button
+            onClick={checkAnswers}
+            className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md transition-colors cursor-pointer"
+          >
+            Revisar respuestas
+          </button>
+        }
       </div>
     </div>
   )

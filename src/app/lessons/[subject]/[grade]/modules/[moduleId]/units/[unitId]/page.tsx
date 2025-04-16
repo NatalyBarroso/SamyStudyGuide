@@ -133,6 +133,8 @@ export default function UnitPage({ params }: Props) {
           onClick={() => {
             if (nextUnit) {
               router.push(`/lessons/${subject}/${grade}/modules/${moduleId}/units/${nextUnit.id}`);
+            } else {
+              router.push(`/lessons/${subject}/${grade}/modules/${moduleId}/exam/1.1`);
             }
           }}
         >
