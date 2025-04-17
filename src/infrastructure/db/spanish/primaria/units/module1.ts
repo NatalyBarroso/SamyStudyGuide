@@ -517,8 +517,8 @@ export const module1: readonly Unit[] = [
           textStart: "Ejemplos de conectores temporales:",
           content: [
             ["Tipo", "Ejemplos"],
-            ["Inicio del evento", "'En un principio', 'Al comienzo', 'En el año...'"],
-            ["Secuencia", "'Luego', 'Posteriormente', 'Más tarde'"],
+            ["Inicio del evento", "'En un principio', 'Al comienzo', 'En el año...', 'Con el inicio de'"],
+            ["Secuencia", "'Luego', 'Posteriormente', 'Más tarde', 'Después', 'A partir de entonces'"],
             ["Causa y consecuencia", "'Debido a esto', 'Como resultado', 'Por esta razón'"],
             ["Conclusión", "'Finalmente', 'En conclusión', 'Por último'"]
           ],
@@ -531,15 +531,15 @@ export const module1: readonly Unit[] = [
           instructions: "Completa las siguientes oraciones con los conectores temporales adecuados.",
           content: [
             {
-              sentence: "1. ________ de la Segunda Guerra Mundial, se establecieron acuerdos de paz.",
+              sentence: "1. _______ de la Segunda Guerra Mundial, se establecieron acuerdos de paz.",
               answer: "después"
             },
             {
-              sentence: "2. En 1492, Cristóbal Colón llegó a América. ________, inició la colonización.",
+              sentence: "2. En 1492, Cristóbal Colón llegó a América. _______, inició la colonización.",
               answer: "a partir de entonces"
             },
             {
-              sentence: "3. ________ la Revolución Industrial, la producción aumentó significativamente.",
+              sentence: "3. _______ la Revolución Industrial, la producción aumentó significativamente.",
               answer: "con el inicio de"
             }
           ]

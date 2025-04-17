@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 interface DragItem {
   text: string
@@ -9,9 +9,10 @@ interface DragAndDropProps {
   instructions: string
   categories: string[]
   items: DragItem[]
+  showResults: boolean
 }
 
-const DragAndDrop = ({ categories, items, instructions }: DragAndDropProps) => {
+const DragAndDrop = ({ categories, items, instructions, showResults }: DragAndDropProps) => {
   const [draggingItem, setDraggingItem] = useState<DragItem | null>(null)
   const [availableItems, setAvailableItems] = useState<DragItem[]>(items)
 
@@ -19,7 +20,7 @@ const DragAndDrop = ({ categories, items, instructions }: DragAndDropProps) => {
     categories.reduce((acc, cat) => ({ ...acc, [cat]: [] }), {} as Record<string, DragItem[]>)
   )
 
-  // const [feedback, setFeedback] = useState<Record<string, boolean> | null>(null)
+  const [feedback, setFeedback] = useState<Record<string, boolean> | null>(null)
 
   const handleDrop = (category: string) => {
     if (draggingItem) {
@@ -40,6 +41,21 @@ const DragAndDrop = ({ categories, items, instructions }: DragAndDropProps) => {
     }))
     setAvailableItems(prev => [...prev, item])
   }
+
+  useEffect(() => {
+    if (showResults) {
+      const result: Record<string, boolean> = {}
+
+      for (const category of categories) {
+        const correctItems = items.filter(i => i.category === category).map(i => i.text).sort()
+        const userItems = answers[category].map(i => i.text).sort()
+        result[category] = JSON.stringify(correctItems) === JSON.stringify(userItems)
+      }
+
+      setFeedback(result)
+    }
+  }, [showResults, answers, categories, items])
+
 
   return (
     <div className="mt-8">
@@ -83,7 +99,8 @@ const DragAndDrop = ({ categories, items, instructions }: DragAndDropProps) => {
                     <span>{item.text}</span>
                     <button
                       onClick={() => handleReturn(category, idx)}
-                      className="text-red-500 text-sm hover:underline"
+                      className="text-red-500 text-sm hover:underline cursor-pointer"
+                      hidden={showResults}
                     >
                       Quitar
                     </button>
@@ -92,11 +109,11 @@ const DragAndDrop = ({ categories, items, instructions }: DragAndDropProps) => {
               </ul>
             )}
 
-            {/* {feedback && (
+            {showResults && feedback && (
               <p className={`mt-2 text-sm font-semibold ${feedback[category] ? 'text-green-600' : 'text-red-600'}`}>
                 {feedback[category] ? '¡Correcto!' : 'Revisa esta categoría'}
               </p>
-            )} */}
+            )}
           </div>
         ))}
       </div>

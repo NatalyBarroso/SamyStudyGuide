@@ -20,6 +20,7 @@ const ActivityMultipleChoice = ({ title, instructions, content }: ActivityMultip
 
   const handleSelect = (questionIndex: number, option: string) => {
     setSelectedAnswers(prev => ({ ...prev, [questionIndex]: option }))
+    setShowResults(false)
   }
 
   const handleCheckAnswers = () => {
@@ -48,7 +49,7 @@ const ActivityMultipleChoice = ({ title, instructions, content }: ActivityMultip
                   <li key={optIdx}>
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input type="radio"
-                        name={`question-${index}`}
+                        // name={`question-${index}`}
                         value={option}
                         checked={userAnswer === option}
                         onChange={() => handleSelect(index, option)}

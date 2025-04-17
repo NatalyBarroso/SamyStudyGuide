@@ -2,12 +2,12 @@ import { Exam } from "@/core/domain/entities/Exam";
 
 export const exams_modules: readonly Exam[] = [
   {
-    id: '1.1',
+    id: '1',
     title: 'Evaluación Final: Recuento Histórico',
     description: 'Esta evaluación tiene como objetivo comprobar los conocimientos adquiridos a lo largo del módulo "Recuento Histórico", abarcando los contenidos de las cinco unidades trabajadas.',
     sections: [
       {
-        id: '1',
+        id: '1.1',
         title: 'Sección 1: Conceptos fundamentales del recuento histórico',
         problems: [
           {
@@ -46,7 +46,7 @@ export const exams_modules: readonly Exam[] = [
         ]
       },
       {
-        id: '2',
+        id: '1.2',
         title: 'Sección 2: Estructura del recuento histórico',
         problems: [
           {
@@ -93,7 +93,7 @@ export const exams_modules: readonly Exam[] = [
         ]
       },
       {
-        id: '3',
+        id: '1.3',
         title: 'Sección 3: Orden cronológico y uso del tiempo en el recuento histórico',
         problems: [
           {
@@ -109,7 +109,7 @@ export const exams_modules: readonly Exam[] = [
           },
           {
             type: 'multiple-choice',
-            question: '8. ¿Cuál de los siguientes conectores temporales indica un evento que ocurre después de otro?o?',
+            question: '8. ¿Cuál de los siguientes conectores temporales indica un evento que ocurre después de otro?',
             options: [
               'a) "Al mismo tiempo"',
               'b) "Después"',
@@ -132,7 +132,7 @@ export const exams_modules: readonly Exam[] = [
         ]
       },
       {
-        id: '4',
+        id: '1.4',
         title: 'Sección 4: Aplicación de los conocimientos',
         problems: [
           {
@@ -172,7 +172,7 @@ export const exams_modules: readonly Exam[] = [
         ]
       },
       {
-        id: '5',
+        id: '1.5',
         title: 'Sección 5: Evaluación general',
         problems: [
           {
@@ -207,6 +207,163 @@ export const exams_modules: readonly Exam[] = [
               'd) Para hacer que la historia sea más entretenida.'
             ],
             correctAnswer: 'c) Para garantizar claridad, precisión y profesionalismo.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: '2',
+    title: 'Evaluación Final: Reportaje',
+    description: 'Esta evaluación tiene como objetivo comprobar los conocimientos adquiridos a lo largo del módulo "Reportaje", abarcando los contenidos de las cuatro unidades trabajadas.',
+
+    sections: [
+      {
+        id: '2.1',
+        title: 'Sección 1: Conceptos generales del reportaje',
+
+        problems: [
+          {
+            type: 'multiple-choice',
+            question: '1. ¿Cuál es el propósito principal de un reportaje?',
+            options: [
+              'a) Expresar opiniones personales.',
+              'b) Narrar hechos reales de forma breve.',
+              'c) Analizar, explicar y contextualizar un tema en profundidad.',
+              'd) Contar historias ficticias con base real.'
+            ],
+            correctAnswer: 'c) Analizar, explicar y contextualizar un tema en profundidad.'
+          },
+          {
+            type: 'multiple-choice',
+            question: '2. ¿Cuál de las siguientes opciones NO es una característica del reportaje?',
+            options: [
+              'a) Profundiza en el tema.',
+              'b) Usa fuentes variadas.',
+              'c) Tiene una estructura rígida de 5 párrafos.',
+              'd) Presenta testimonios y datos.'
+            ],
+            correctAnswer: 'c) Tiene una estructura rígida de 5 párrafos.'
+          },
+          {
+            type: 'multiple-choice',
+            question: '3. ¿Cuál de los siguientes enunciados es una opinión y no un hecho?',
+            options: [
+              'a) El 65% de los encuestados rechaza la reforma.',
+              'b) La ley fue aprobada el 5 de marzo.',
+              'c) Es evidente que la reforma será un desastre.',
+              'd) El congreso sesionó durante cuatro días.'
+            ],
+            correctAnswer: 'c) Es evidente que la reforma será un desastre.'
+          }
+        ]
+      },
+      {
+        id: '2.2',
+        title: 'Sección 2: Estructura y contenido',
+        problems: [
+          {
+            type: 'multiple-choice',
+            question: '4. ¿Qué parte del reportaje suele contener la idea principal?',
+            options: [
+              'a) En los testimonios personales.',
+              'b) En el título y la introducción.',
+              'c) En la bibliografía.',
+              'd) En las notas al pie.'
+            ],
+            correctAnswer: 'b) En el título y la introducción.'
+          },
+          {
+            type: 'classify-text',
+            instructions: '5. Lee el fragmento y clasifícalo según su función dentro de un reportaje.',
+            options: ['Introducción', 'Cuerpo del reportaje', 'Conclusión'],
+            text: 'A través de diversas entrevistas, los habitantes relatan cómo la falta de agua ha afectado su salud y su economía local.',
+            correctAnswer: 'Cuerpo del reportaje'
+          },
+          {
+            type: 'multiple-choice',
+            question: '6. ¿Cuál de las siguientes oraciones representa una idea secundaria?',
+            options: [
+              'a) El reportaje denuncia la falta de acceso al agua en comunidades rurales.',
+              'b) La sequía ha obligado a las familias a modificar su rutina diaria.',
+              'c) El 78% de las fuentes hídricas están contaminadas.',
+              'd) Organizaciones internacionales han donado filtros de agua.'
+            ],
+            correctAnswer: 'd) Organizaciones internacionales han donado filtros de agua.'
+          }
+        ]
+      },
+      {
+        id: '2.3',
+        title: 'Sección 3: Análisis e interpretación de la información',
+        problems: [
+          {
+            type: 'multiple-choice',
+            question: '7. ¿Qué elemento ayuda a identificar si una fuente es confiable?',
+            options: [
+              'a) Que sea breve.',
+              'b) Que tenga imágenes llamativas.',
+              'c) Que esté respaldada por evidencia o datos verificables.',
+              'd) Que tenga muchos comentarios positivos.'
+            ],
+            correctAnswer: 'c) Que esté respaldada por evidencia o datos verificables.'
+          },
+          {
+            type: 'multiple-choice',
+            question: '¿Cuál de las siguientes frases indica un posible sesgo?',
+            options: [
+              'a) La población del área fue entrevistada por el medio.',
+              'b) Las autoridades no hicieron nada porque no les importa.',
+              'c) El informe menciona tres causas posibles del problema.',
+              'd) La situación ha sido difícil para todos los involucrados.'
+            ],
+            correctAnswer: 'b) Las autoridades no hicieron nada porque no les importa.'
+          },
+          {
+            type: 'multiple-choice',
+            question: '¿Cuál de estas frases representa información relevante?',
+            options: [
+              'a) El nombre del río proviene del idioma quechua.',
+              'b) El 90% de los residuos son vertidos sin tratamiento previo.',
+              'c) El paisaje alrededor del río es muy atractivo.',
+              'd) Algunos habitantes creen que el río está maldito.'
+            ],
+            correctAnswer: 'b) El 90% de los residuos son vertidos sin tratamiento previo.'
+          }                    
+        ]
+      },
+      {
+        id: '2.4',
+        title: 'Sección 4: Selección de información relevante',
+        problems: [
+          {
+            type: 'drag-and-drop',
+            instructions: 'Relaciona los conceptos con su definición correspondiente.',
+            categories: ['Información verificable.', 'Juicio personal o valoración.', 'Proporciona datos verificables y objetivos.', 'Presentación parcial o incompleta del tema.'],
+            items: [
+              {text: 'Fuente confiable', category: 'Proporciona datos verificables y objetivos.'},
+              {text: 'Hecho', category: 'Información verificable.'},
+              {text: 'Sesgo informativo', category: 'Presentación parcial o incompleta del tema.'},
+              {text: 'Opinión', category: 'Juicio personal o valoración.'}
+            ]
+          },
+          {
+            type: 'multiple-choice',
+            question: '¿Cuál de las siguientes afirmaciones corresponde a un hecho verificable?',
+            options: [
+              'a) Creo que el gobierno no hace lo suficiente.',
+              'b) Es evidente que la situación es injusta.',
+              'c) En 2022 se registraron más de 500 protestas por el mismo motivo.',
+              'd) Es indignante lo que está ocurriendo.'
+            ],
+            correctAnswer: 'c) En 2022 se registraron más de 500 protestas por el mismo motivo.'
+          },
+          {
+            type: 'classify-text',
+            instructions: 'Lee la siguiente frase y clasifícala como hecho, opinión o sesgo.',
+            options: ['Hecho', 'Opinión', 'Sesgo'],
+            text: 'Las autoridades solo reaccionan cuando la prensa los expone.',
+            correctAnswer: 'Sesgo'
           }
         ]
       }

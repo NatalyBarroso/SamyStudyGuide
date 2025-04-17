@@ -1,6 +1,6 @@
 export const modules_data = [
   {
-    id: "1.1",
+    id: "1",
     title: "Recuento histórico",
     description: "Identificación de una sucesión cronológica de hechos. Inferencia de fechas y lugares. Identificación de la información relevante.",
     goals: [
@@ -15,7 +15,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.2",
+    id: "2",
     title: "Reportaje",
     description: "Identificación de las características generales de un reportaje. Interpretación de la información. Identificación de la idea principal. Selección de información relevante.",
     goals: [
@@ -29,7 +29,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.3",
+    id: "3",
     title: "Textos científicos y populares",
     description: "Identificación de las características de ambos tipos de textos.",
     goals: [
@@ -43,7 +43,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.4",
+    id: "4",
     title: "Cuestionarios",
     description: "Identificación de las formas de respuestas requeridas en cuestionarios. Elaboración de cuestionarios, según los propósitos de las preguntas.",
     goals: [
@@ -57,7 +57,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.5",
+    id: "5",
     title: "Ortografía y puntuación",
     description: "Uso de v, b, s, c, z, ll, y, g, j, palabras homófonas. Acentuación de palabras agudas, graves, esdrújulas y monosílabos. Uso de los signos de puntuación en un párrafo.",
     goals: [
@@ -71,7 +71,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.6",
+    id: "6",
     title: "Sintaxis",
     description: "Identificación de las partes de una oración simple. Identificación de la estructura y concordancia de oraciones. Identificación del tipo de oraciones compuestas: yuxtapuestas, coordinadas y subordinadas. Uso de nexos.",
     goals: [
@@ -85,7 +85,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.7",
+    id: "7",
     title: "Léxico",
     description: "Inferencia de significado de palabras según el contexto. Uso del diccionario.",
     goals: [
@@ -99,7 +99,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.8",
+    id: "8",
     title: "Cuento",
     description: "Identificación de las partes de un cuento. Inferencia de las características de los personajes. Comprensión de figuras retóricas: metáforas, símiles, analogías, reiteración, entre otros.",
     goals: [
@@ -113,7 +113,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.9",
+    id: "9",
     title: "Textos instructivos",
     description: "Elaboración de diagramas y notas. Uso de modos y tiempos verbales adecuados.",
     goals: [
@@ -127,7 +127,7 @@ export const modules_data = [
   },
 
   {
-    id: "1.10",
+    id: "10",
     title: "Categorías de información",
     description: "Clasificación de información en secciones temáticas. Jerarquización de la información.",
     goals: [

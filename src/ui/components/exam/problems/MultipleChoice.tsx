@@ -49,6 +49,7 @@ export default function MultipleChoice({ question, options, correctAnswer, showR
                 checked={isSelected}
                 onChange={() => setSelectedOption(option)}
                 className='accent-[var(--primary-color)]'
+                disabled={showResult}
               />
               <span className="text-gray-800 text-md font-[family-name:var(--font-cutive-mono)]">{option}</span>
             </label>

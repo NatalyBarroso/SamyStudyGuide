@@ -18,9 +18,9 @@ const LessonExam = ({ title, description, sections }: LessonExamProps) => {
   const renderExamProblems = (examProblem: ExamProblems, index: number) => {
     switch (examProblem.type) {
       case 'multiple-choice': return <MultipleChoice key={index} {...examProblem} showResult={showResults} />
-      case 'drag-and-drop': return <DragAndDrop key={index} {...examProblem} />
-      case 'multiple-select': return <MultipleSelect key={index} {...examProblem} />
-      case 'classify-text': return <ClassifyText key={index} {...examProblem} />
+      case 'drag-and-drop': return <DragAndDrop key={index} {...examProblem} showResults={showResults} />
+      case 'multiple-select': return <MultipleSelect key={index} {...examProblem} showResults={showResults} />
+      case 'classify-text': return <ClassifyText key={index} {...examProblem} showResults={showResults} />
       default: return null
     }
   }

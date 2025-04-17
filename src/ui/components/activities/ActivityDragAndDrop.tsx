@@ -102,7 +102,7 @@ const ActivityDragAndDrops = ({ title, instructions, content }: ActivityDragAndD
                     <span>{item.text}</span>
                     <button
                       onClick={() => handleReturn(category, idx)}
-                      className="text-red-500 text-sm hover:underline"
+                      className="text-red-500 text-sm hover:underline cursor-pointer"
                     >
                       Quitar
                     </button>

@@ -22,6 +22,7 @@ const ActivityClassify = ({ title, instructions, options, content }: ActivityCla
     const newAnswers = [...answers]
     newAnswers[index] = value
     setAnswers(newAnswers)
+    setShowResults(false)
   }
 
   const checkAnswer = (index: number) => {
