@@ -4,6 +4,7 @@ import MultipleChoice from "./problems/MultipleChoice"
 import DragAndDrop from "./problems/DragAndDrop"
 import MultipleSelect from "./problems/MultipleSlect"
 import ClassifyText from "./problems/ClassifyText"
+import { useState } from "react"
 
 interface LessonExamProps {
   title: string
@@ -12,13 +13,14 @@ interface LessonExamProps {
 }
 
 const LessonExam = ({ title, description, sections }: LessonExamProps) => {
+  const [showResults, setShowResults] = useState(false)
 
   const renderExamProblems = (examProblem: ExamProblems, index: number) => {
     switch (examProblem.type) {
-      case 'multiple-choice':  return <MultipleChoice key={index} {...examProblem} />
-      case 'drag-and-drop':  return <DragAndDrop key={index} {...examProblem} />
-      case 'multiple-select':  return <MultipleSelect key={index} {...examProblem} />
-      case 'classify-text':  return <ClassifyText key={index} {...examProblem} />
+      case 'multiple-choice': return <MultipleChoice key={index} {...examProblem} showResult={showResults} />
+      case 'drag-and-drop': return <DragAndDrop key={index} {...examProblem} />
+      case 'multiple-select': return <MultipleSelect key={index} {...examProblem} />
+      case 'classify-text': return <ClassifyText key={index} {...examProblem} />
       default: return null
     }
   }
@@ -48,6 +50,7 @@ const LessonExam = ({ title, description, sections }: LessonExamProps) => {
 
       <button
         className="mt-6 px-4 py-2 rounded bg-[var(--primary-color)] text-white font-semibold hover:bg-[var(--secondary-color)] transition cursor-pointer"
+        onClick={() => setShowResults(true)}
       >
         Revisar respuestas
       </button>
