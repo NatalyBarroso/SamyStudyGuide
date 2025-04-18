@@ -21,6 +21,7 @@ const ActivityFillInTheBlanks = ({ title, instructions, content }: ActivityFillI
     const updated = [...responses]
     updated[index] = value
     setResponses(updated)
+    setShowResults(false)
   }
 
   const checkCorrect = (response: string, answer: string) =>

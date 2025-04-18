@@ -202,8 +202,8 @@ export const module2: readonly Unit[] = [
         activity: {
           type: 'classify-text',
           title: 'Actividad: Evalúa la fuente',
-          instructions: 'Clasifica las siguientes fuentes según su nivel de confiabilidad (Alta, Media, Baja), justificando tu elección:',
-          options: ['Alta', 'Baja', 'Media'],
+          instructions: 'Clasifica las siguientes fuentes según su nivel de confiabilidad (Alta, Media, Baja)',
+          options: ['Alta', 'Media', 'Baja'],
           content: [
             { text: 'Un informe del Instituto Nacional de Estadística.', correctAnswer: 'Alta' },
             { text: 'El testimonio de una persona afectada por un hecho.', correctAnswer: 'Media' },
@@ -303,7 +303,7 @@ export const module2: readonly Unit[] = [
         activity: {
           type: 'classify-text',
           title: 'Actividad: Clasifica las ideas',
-          instructions: 'A partir del siguiente enunciado central: *“El desempleo juvenil ha aumentado significativamente en los últimos años en zonas urbanas.”*, clasifica las oraciones como idea secundaria (IS) o detalle complementario (DC):',
+          instructions: 'A partir del siguiente enunciado central: “El desempleo juvenil ha aumentado significativamente en los últimos años en zonas urbanas.”, clasifica las oraciones como idea secundaria (IS) o detalle complementario (DC):',
           options: ["IS", "DC"],
           content: [
             {
@@ -332,7 +332,7 @@ export const module2: readonly Unit[] = [
 
         example: {
           type: 'text',
-          textStart: 'En el reportaje *“Aulas sin internet: la brecha digital en la educación rural”*, el texto comienza así:',
+          textStart: 'En el reportaje <bold>“Aulas sin internet: la brecha digital en la educación rural”</bold>, el texto comienza así:',
           content: '“Mientras en la ciudad los estudiantes asisten a clases virtuales, en la comunidad de San Miguel, los niños caminan dos horas para recoger una guía impresa.”',
           textEnd: 'Esto permite inferir que la idea principal está relacionada con la desigualdad en el acceso a la educación digital.'
         },
@@ -340,10 +340,10 @@ export const module2: readonly Unit[] = [
         activity: {
           type: 'multiple-choice',
           title: 'Actividad: Detecta la técnica',
-          instructions: '¿Qué estrategia permite ubicar la idea principal en el ejemplo anterior?',
+          instructions: '',
           content: [
             {
-              question: '',
+              question: '¿Qué estrategia permite ubicar la idea principal en el ejemplo anterior?',
               options: [
                 'A) Identificar cifras numéricas.',
                 'B) Observar el título y el primer párrafo.',
@@ -393,7 +393,7 @@ export const module2: readonly Unit[] = [
         activity: {
           type: 'classify-text',
           title: 'Actividad: Identifica la información útil',
-          instructions: 'Lee el siguiente fragmento y selecciona qué frases son relevantes (R) para entender el tema del reportaje y cuáles son solo datos de contexto o apoyo (A):\n\n"En los últimos cinco años, el nivel de agua del lago ha descendido dos metros, afectando la fauna local. El lago fue descubierto en 1542 por un grupo de exploradores españoles. Hoy, miles de familias dependen de él para pescar y obtener agua potable.”',
+          instructions: 'Lee el siguiente fragmento y selecciona qué frases son relevantes (R) para entender el tema del reportaje y cuáles son solo datos de contexto o apoyo (A):\n\n<italic>"En los últimos cinco años, el nivel de agua del lago ha descendido dos metros, afectando la fauna local. El lago fue descubierto en 1542 por un grupo de exploradores españoles. Hoy, miles de familias dependen de él para pescar y obtener agua potable.”</italic>',
           options: ['A', 'R'],
           content: [
             {
@@ -433,7 +433,7 @@ export const module2: readonly Unit[] = [
         activity: {
           type: 'classify-text',
           title: 'Actividad: Distingue el tipo de información',
-          instructions: 'A partir del tema *“Falta de acceso a internet en zonas alejadas”*, lee los siguientes enunciados y clasifícalos como: Relevante (R) o Apoyo (A).',
+          instructions: 'A partir del tema <bold>“Falta de acceso a internet en zonas alejadas”</bold>, lee los siguientes enunciados y clasifícalos como: Relevante (R) o Apoyo (A).',
           options: ['R', 'A'],
           content: [
             {
@@ -477,19 +477,19 @@ export const module2: readonly Unit[] = [
           instructions: 'Lee los siguientes fragmentos y colócalos en un orden que permita construir un argumento sólido:',
           content: [
             {
-              id: 'B',
-              text: '“El gobierno anunció el incremento tarifario el lunes pasado.”'
+              id: '1',
+              text: '“Grupos ciudadanos han convocado marchas en distintas ciudades.”'
             },
             {
-              id: 'A',
+              id: '2',
               text: '“Las protestas se han intensificado en la última semana debido al aumento del precio del transporte.”'
             },
             {
-              id: 'C',
-              text: '“Grupos ciudadanos han convocado marchas en distintas ciudades.”'
+              id: '3',
+              text: '“El gobierno anunció el incremento tarifario el lunes pasado.”'
             }
           ],
-          correctOrder: ['B', 'A', 'C']
+          correctOrder: ['3', '2', '1']
         },
       }            
     ],

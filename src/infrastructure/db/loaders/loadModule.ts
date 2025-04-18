@@ -7,11 +7,11 @@ export const loadModule = async (
 ): Promise<Unit[]> => {
   try {
     // Extrae solo el número de archivo correspondiente, por ejemplo: "1.3" => "3"
-    const moduleNumber  = parseInt(moduleId.split('.')[1]);
+    // const moduleNumber  = parseInt(moduleId.split('.')[1]);
     const data = await import(
-      `@/infrastructure/db/${subject}/${grade}/units/module${moduleNumber}`
+      `@/infrastructure/db/${subject}/${grade}/units/module${moduleId}`
     );
-    return data[`module${moduleNumber}`] as Unit[];
+    return data[`module${moduleId}`] as Unit[];
   } catch (error) {
     console.error("Error loading module:", error);
     return [];

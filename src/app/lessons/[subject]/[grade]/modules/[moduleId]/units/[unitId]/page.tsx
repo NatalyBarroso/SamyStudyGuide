@@ -9,6 +9,7 @@ import Image from "next/image";
 import type { Unit } from "@/core/domain/entities/Unit";
 import { use, useEffect, useState } from "react";
 import StyledText from "@/ui/components/common/StyledText";
+import { exams_modules } from "@/infrastructure/db/spanish/primaria/exams-modules";
 
 interface Props {
   params: Promise<{
@@ -133,6 +134,14 @@ export default function UnitPage({ params }: Props) {
           onClick={() => {
             if (nextUnit) {
               router.push(`/lessons/${subject}/${grade}/modules/${moduleId}/units/${nextUnit.id}`);
+            } else {
+              const exam = exams_modules.find((e) => e.id === moduleId)
+              if (exam) {
+                router.push(`/lessons/${subject}/${grade}/modules/${moduleId}/exam/${exam.id}`);
+              } else {
+                <p>Examen no encontrado</p>
+                console.warn("Examen no encontrado para este módulo.");
+              }
             }
           }}
         >

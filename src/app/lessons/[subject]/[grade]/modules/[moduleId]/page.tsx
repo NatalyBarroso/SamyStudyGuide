@@ -1,12 +1,14 @@
 'use client'
 import Header from "@/ui/components/layout/Header";
 import Footer from "@/ui/components/layout/Footer";
-import { use } from 'react'
+import { use, useEffect, useState } from 'react'
 import Image from "next/image";
 import { modules_data } from "@/infrastructure/db/spanish/primaria/modules-data"; // Puedes dinamizar esto también si lo necesitas
+import { Unit } from "@/core/domain/entities/Unit";
+import { loadModule } from "@/infrastructure/db/loaders/loadModule";
 
 interface Props {
-  params: Promise<{ 
+  params: Promise<{
     subject: string;
     grade: string;
     moduleId: string;
@@ -16,6 +18,16 @@ interface Props {
 export default function ModulePage({ params }: Props) {
   const { subject, grade, moduleId } = use(params);
   const currentModule = modules_data.find(m => m.id === moduleId);
+
+  const [units, setUnits] = useState<Unit[]>([]);
+
+  useEffect(() => {
+    loadModule(subject, grade, moduleId).then(units => {
+      console.log("Unidades cargadas:", units);
+      setUnits(units);
+    });
+  }, [subject, grade, moduleId]);
+
 
   if (!currentModule) {
     return <div className="p-4">Módulo no encontrado.</div>;
@@ -38,7 +50,7 @@ export default function ModulePage({ params }: Props) {
         <hr className="w-full border-t-2 sm:border-t-4 border-black mx-2 sm:mx-4 md:mx-10 my-4" />
 
         <div className="flex flex-row justify-end items-center w-full mb-4">
-          <p className="text-xs sm:text-sm font-bold font-[family-name:var(--font-courier-prime)]">Unit 0-5</p>
+          <p className="text-xs sm:text-sm font-bold font-[family-name:var(--font-courier-prime)]">Unit 0-{units.length}</p>
         </div>
 
         <div className="w-full font-[family-name:var(--font-cutive-mono)]">
@@ -47,7 +59,7 @@ export default function ModulePage({ params }: Props) {
             <p key={idx} className="mb-2">{line}</p>
           ))}
           <h2 className="mt-8 text-base sm:text-lg font-[family-name:var(--font-courier-prime)] font-bold">Objetivos del Módulo</h2>
-          <ul className="list-disc list-inside my-4 text-sm sm:text-base">
+          <ul className="list-disc list-inside my-4 text-base sm:text-lg">
             {currentModule.goals.map((goal, index) => (
               <li key={index}>{goal}</li>
             ))}
