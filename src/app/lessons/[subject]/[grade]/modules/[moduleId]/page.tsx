@@ -23,7 +23,7 @@ export default function ModulePage({ params }: Props) {
 
   useEffect(() => {
     loadModule(subject, grade, moduleId).then(units => {
-      console.log("Unidades cargadas:", units);
+      // console.log("Unidades cargadas:", units);
       setUnits(units);
     });
   }, [subject, grade, moduleId]);

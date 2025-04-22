@@ -6,11 +6,14 @@ import { use } from "react"
 interface ExamProps {
   params: Promise<{
     examId: string
+    subject: string
+    grade: string
+    moduleId: string
   }>
 }
 
 export default function ExamPage({ params }: ExamProps) {
-  const { examId } = use(params)
+  const { examId, subject, grade, moduleId } = use(params)
 
   const exam_data = exams_modules.find(e => e.id === examId)
 
@@ -26,6 +29,9 @@ export default function ExamPage({ params }: ExamProps) {
           title={exam_data.title}
           description={exam_data.description}
           sections={exam_data.sections}
+          subject={subject}
+          grade={grade}
+          moduleId={moduleId}
         />
       </div>
     </div>
