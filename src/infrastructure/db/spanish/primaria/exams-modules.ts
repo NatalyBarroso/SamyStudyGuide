@@ -125,7 +125,7 @@ export const exams_modules: readonly Exam[] = [
             items: [
               { text: 'Primero', category: 'Indica el inicio de la secuencia.' },
               { text: 'Finalmente', category: 'Señala el cierre de la narración.' },
-              { text: 'Después', category: ' Muestra una sucesión de eventos.' },
+              { text: 'Después', category: 'Muestra una sucesión de eventos.' },
               { text: 'Al mismo tiempo', category: 'Indica simultaneidad entre hechos.' }
             ]
           }

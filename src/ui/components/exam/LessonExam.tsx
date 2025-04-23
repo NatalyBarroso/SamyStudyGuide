@@ -5,15 +5,20 @@ import DragAndDrop from "./problems/DragAndDrop"
 import MultipleSelect from "./problems/MultipleSlect"
 import ClassifyText from "./problems/ClassifyText"
 import { useState } from "react"
+import Image from "next/image"
 
 interface LessonExamProps {
   title: string
   description: string
   sections: Sections[]
+  grade: string
+  subject: string
+  moduleId: string
 }
 
-const LessonExam = ({ title, description, sections }: LessonExamProps) => {
+const LessonExam = ({ title, description, sections, grade, subject, moduleId }: LessonExamProps) => {
   const [showResults, setShowResults] = useState(false)
+  const [buttonDisabled, setButtonDisabled] = useState(false)
 
   const renderExamProblems = (examProblem: ExamProblems, index: number) => {
     switch (examProblem.type) {
@@ -48,13 +53,30 @@ const LessonExam = ({ title, description, sections }: LessonExamProps) => {
         ))}
       </div>
 
-      <button
-        className="mt-6 px-4 py-2 rounded bg-[var(--primary-color)] text-white font-semibold hover:bg-[var(--secondary-color)] transition cursor-pointer"
-        onClick={() => setShowResults(true)}
-      >
-        Revisar respuestas
-      </button>
-    </div>
+      <div className="flex items-center justify-between mt-6 lg:px-2">
+        <button
+          className="px-4 py-2 rounded bg-[var(--primary-color)] text-white font-semibold hover:bg-[var(--secondary-color)] transition cursor-pointer"
+          onClick={() => {
+            setShowResults(true);
+            setButtonDisabled(true);
+          }}
+          disabled={buttonDisabled}
+        >
+          Revisar respuestas
+        </button>
+
+        {showResults && (
+          <button
+            className="w-14 h-14 bg-[var(--primary-color)] rounded-full shadow-lg flex items-center justify-center hover:bg-[var(--secondary-color)] transition-colors duration-300 cursor-pointer"
+            onClick={() =>
+              window.location.href = `/lessons/${subject}/${grade}/modules/${moduleId}/review`
+            }
+          >
+            <Image src="/icons/mingcute--right-line.svg" alt="Ir al siguiente" width={24} height={24} priority />
+          </button>
+        )}
+      </div>
+    </div >
   )
 }
 
