@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Samy's Study Guide
 
-## Getting Started
+"Samy's Study Guide" is an educational platform designed to help students prepare for a general knowledge university entrance exam. The website will provide structured educational content, interactive exercises, and practice exams with immediate feedback.
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Frontend**: 
+  - Next.js 15.2.3
+  - React 19
+  - TypeScript
+  - TailwindCSS 4.0.14
+  - DnD Kit (for drag and drop functionality)
+
+## Project Structure
+
+```
+src/
+├── app/          # Application components and pages
+├── core/         # Business logic and models
+├── infrastructure/ # External configurations and services
+├── lib/          # Utilities and helpers
+├── ui/           # Reusable UI components
+└── styles/       # Global styles and CSS configurations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+```bash
+git clone git@github.com:NatalyBarroso/SamyStudyGuide.git
+cd samys-study-guide
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn More
+3. Start the development server:
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev`: Starts the development server with Turbopack
+- `npm run build`: Builds the application for production
+- `npm run start`: Starts the production server
+- `npm run lint`: Runs the linter to check the code
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+The project uses:
+- ESLint for linting
+- TypeScript for static typing
+- PostCSS and TailwindCSS for styling
+- Turbopack for fast development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We welcome contributions from the community! Here's how you can help:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Current Contributors
+
+- [Nataly Barroso](https://github.com/NatalyBarroso) - Project Creator & Lead Developer
+
+## Visit the website (demo)
+You can try the platform here: [https://sammysstudyguide.netlify.app]
+
+## Contact
+Created by [Nataly Barroso](mailto:barrosonataly.dev@gmail.com.com) – feel free to reach out!
+
+## License
+
+[MIT](LICENSE)
