@@ -2,7 +2,7 @@
 
 "Samy's Study Guide" is an educational platform designed to help students prepare for a general knowledge university entrance exam. The website will provide structured educational content, interactive exercises, and practice exams with immediate feedback.
 
-![Samy's Study Guide Demo](https://raw.githubusercontent.com/NatalyBarroso/SamyStudyGuide/main/public/images/SammysStudyGuide.png)
+![Samy's Study Guide Demo](public/images/samstudyguide-info.png)
 
 
 ## Technologies
