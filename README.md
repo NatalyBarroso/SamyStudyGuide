@@ -2,6 +2,9 @@
 
 "Samy's Study Guide" is an educational platform designed to help students prepare for a general knowledge university entrance exam. The website will provide structured educational content, interactive exercises, and practice exams with immediate feedback.
 
+![Interfaces de la plataforma](./public/images/SammysStudyGuide.png)
+
+
 ## Technologies
 
 - **Frontend**: 
@@ -48,6 +51,8 @@ npm run dev
 - `npm run start`: Starts the production server
 - `npm run lint`: Runs the linter to check the code
 
+
+
 ## Development
 
 The project uses:
@@ -70,11 +75,15 @@ We welcome contributions from the community! Here's how you can help:
 
 - [Nataly Barroso](https://github.com/NatalyBarroso) - Project Creator & Lead Developer
 
+
 ## Visit the website (demo)
 You can try the platform here: [https://sammysstudyguide.netlify.app]
 
+
 ## Contact
 Created by [Nataly Barroso](mailto:barrosonataly.dev@gmail.com.com) – feel free to reach out!
+
+
 
 ## License
 
