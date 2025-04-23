@@ -1,3 +1,25 @@
+/**
+ * Route: /
+ * 
+ * Home Page - Samy's Study Guide
+ *
+ * This is the main landing page of the Samy's Study Guide educational platform.
+ * It presents a minimal and centered layout that includes:
+ * - A school-themed logo.
+ * - A dynamic typing effect showcasing the site name.
+ * - A call-to-action button that navigates users to the lessons section.
+ * 
+ * The page is styled with Tailwind CSS and uses responsive design principles.
+ * It uses custom font variables and a client-side typing effect hook for interactivity.
+ * 
+ * Technologies:
+ * - React (Client Component)
+ * - Next.js Image optimization
+ * - Custom React hook (useTypingEffect)
+ * - Tailwind CSS for styling
+ * - Next.js useRouter for navigation
+ */
+
 "use client";
 import Image from "next/image";
 import "../styles/globals.css";
@@ -5,7 +27,7 @@ import { useRouter } from "next/navigation";
 import useTypingEffect from "../ui/hooks/useTypingEffect";
 
 export default function Home() {
-  const router = useRouter(); // Add useRouter hook
+  const router = useRouter();
   const text = useTypingEffect("SAMY'S STUDY GUIDE");
 
   return (
@@ -28,7 +50,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-12 font-[family-name:var(--font-cutive-mono)] text-center">
         <button
           className="bg-[var(--primary-color)] px-8 sm:px-12 py-2 text-white text-lg sm:text-xl rounded-4xl cursor-pointer"
-          onClick={() => router.push('/lessons')} // Add onClick handler
+          onClick={() => router.push('/lessons')}
         >
           START<br />LESSONS
         </button>
