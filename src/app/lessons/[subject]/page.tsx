@@ -1,3 +1,18 @@
+/**
+ * Route: /lessons/[subject]
+ * 
+ * Subject Lesson Page (e.g., Spanish) - Samy's Study Guide
+ *
+ * This dynamic page (inside [subject]) displays educational content for a specific subject.
+ * It includes navigation elements, level selection buttons (e.g., Primaria, Secundaria),
+ * and content previews such as flashcards and mock exams.
+ * 
+ * Technologies:
+ * - React (Client Component)
+ * - Next.js routing (dynamic folder structure)
+ * - Tailwind CSS for styling
+ */
+
 'use client';
 import Header from "../../../ui/components/layout/Header";
 import Footer from "@/ui/components/layout/Footer";
@@ -11,12 +26,12 @@ export default function Spanish() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      {/* Título principal */}
+      {/* Title */}
       <h1 className="font-[family-name:var(--font-courier-prime)] text-2xl md:text-3xl px-4 md:px-10 mb-8 text-left">
         ESPAÑOL
       </h1>
 
-      {/* Niveles + botones */}
+      {/* Levels + buttons */}
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center px-4 md:px-10 mb-6">
         <h2 className="font-[family-name:var(--font-cutive-mono)] text-xl">Niveles</h2>
         <button
@@ -30,10 +45,10 @@ export default function Spanish() {
         </button>
       </div>
 
-      {/* Línea separadora */}
+      {/* Separator line */}
       <hr className="border-t-4 border-black mx-4 md:mx-10 my-6" />
 
-      {/* Contenedor principal */}
+      {/* Main container */}
       <div className="flex flex-col items-center justify-center px-4 md:px-8 py-10">
         <div className="bg-[var(--asset-color)] flex flex-col lg:flex-row w-full max-w-[1200px] gap-6 rounded-lg shadow-md p-6">
 

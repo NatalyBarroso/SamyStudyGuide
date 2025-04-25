@@ -1,3 +1,25 @@
+/**
+ * Route: /lessons
+ * 
+ * Lessons Home Page - Samy's Study Guide
+ *
+ * This page serves as the main entry point to the lessons section of the Samy's Study Guide platform.
+ * It displays a categorized grid of subjects, allowing users to explore different areas of study.
+ * Each subject is presented as a clickable card that routes the user to the corresponding content or a placeholder.
+ *
+ * Features:
+ * - Dynamic navigation using Next.js' useRouter.
+ * - Cards representing subject areas: Spanish, Math, Natural Sciences, Social Sciences.
+ * - Responsive design using Tailwind CSS utility classes.
+ * - Includes a custom Header component for consistent navigation across the site.
+ * 
+ * Technologies:
+ * - React (Client Component)
+ * - Next.js routing
+ * - Tailwind CSS for styling
+ * - Next.js Image optimization
+ */
+
 'use client';
 import Header from "../../ui/components/layout/Header";
 import Image from "next/image";

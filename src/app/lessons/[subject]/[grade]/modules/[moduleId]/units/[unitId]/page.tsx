@@ -1,3 +1,20 @@
+/**
+ * Route: /lessons/[subject]/[grade]/modules/[moduleId]/units/[unitId]
+ * 
+ * Unit Page - Samy's Study Guide
+ *
+ * This page (in units/[unitId]) displays the full content of a single unit.
+ * It includes an introduction, key topics, and associated themes and subthemes.
+ * At the end, it shows a summary and provides navigation to the next unit or exam.
+ *
+ * Technologies:
+ * - React (Client Component)
+ * - Next.js dynamic routing
+ * - Tailwind CSS for styling
+ * - Modular design with components like ThemeCard, SubthemeCard, StyledText
+ * - Dynamic unit loading from database with fallback exam redirection
+ */
+
 'use client'
 import Header from "@/ui/components/layout/Header";
 import Footer from "@/ui/components/layout/Footer";
@@ -40,7 +57,7 @@ export default function UnitPage({ params }: Props) {
     <div>
       <Header />
 
-      {/* Titulo de la unidad */}
+      {/* Unit title */}
       <div className="flex flex-col justify-start min-h-screen px-4 sm:px-8 md:px-12 lg:px-16 py-6 sm:py-8 text-base sm:text-lg">
         <div className="w-full">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 font-[family-name:var(--font-courier-prime)]">
@@ -63,7 +80,7 @@ export default function UnitPage({ params }: Props) {
             <StyledText text={currentUnit.introduction} />
           )}
 
-          {/* Temas clave de la unidad */}
+          {/* Key topics of the unit */}
           <h2 className="mt-8 text-base sm:text-lg font-[family-name:var(--font-courier-prime)] font-bold">
             Temas clave
           </h2>
@@ -82,7 +99,8 @@ export default function UnitPage({ params }: Props) {
             ))}
           </ul>
         </div>
-
+        
+        {/* Themes and subthemes */}
         {currentUnit?.themes && (
           <div className="flex flex-col gap-6 mt-4">
             {currentUnit.themes.map((theme, index) => (
@@ -110,7 +128,7 @@ export default function UnitPage({ params }: Props) {
         )}
       </div>
 
-      {/* Resumen de la unidad */}
+      {/* Unit Summary */}
       {currentUnit?.summary && (
         <div className="mt-4 px-4 sm:px-8 md:px-12 lg:px-16 text-base sm:text-lg font-[family-name:var(--font-cutive-mono)]">
           <h3 className="font-bold mb-2 lg:text-xl font-[family-name:var(--font-courier-prime)]">Resumen de la unidad</h3>
@@ -122,12 +140,14 @@ export default function UnitPage({ params }: Props) {
         </div>
       )}
 
+      {/* Mobile next button (bottom right) */}
       <div className="lg:hidden">
         <button className="fixed bottom-2 right-4 w-12 h-12 sm:w-14 sm:h-14 bg-[var(--primary-color)] rounded-full shadow-lg flex items-center justify-center hover:bg-[var(--secondary-color)] transition-colors duration-300 z-50">
           <Image src="/icons/mingcute--right-line.svg" alt="Ir al siguiente" width={24} height={24} priority />
         </button>
       </div>
 
+      {/* Desktop next button (top right) */}
       <div className="hidden lg:flex lg:justify-end lg:px-16 lg:mt-8 mb-5">
         <button
           className="w-14 h-14 bg-[var(--primary-color)] rounded-full shadow-lg flex items-center justify-center hover:bg-[var(--secondary-color)] transition-colors duration-300 cursor-pointer"
